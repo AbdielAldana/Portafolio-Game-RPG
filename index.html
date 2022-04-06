@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Play Abdiel Aldana" />
+    <meta property="og:description" content="Juega con mi portafolio web" />
+    <meta property="og:image" content="https://play.abdielaldana.com/img.png">
+    <meta property="og:url" content="https://play.abdielaldana.com/" />
+    <link rel="icon" type="image/png" href="img/recursos/fav.png" sizes="64x64">
+
+    <style>
+        @font-face {
+            font-family: 'RPGSystem';
+            src: url('styles/RPGSystem.ttf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
+        }
+    </style>
+    <title>Abdiel Aldana</title>
+    <link href="img/recursos/styleGolem.css" rel="stylesheet" type="text/css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="styles/loader.css" rel="stylesheet" type="text/css">
+    <link href="styles/modals.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- ================================================================================= -->
+    <!-- Audios -->
+    <audio src="sounds/music/song.mp3" id="audio-player" loop volume=".01">
+    </audio>
+    <audio src="sounds/effects/open-book.mp3" id="book-open-sound">
+    </audio>
+
+    
+
+    <!-- ================================================================================= -->
+    <!-- Pantalla de Carga -->
+    <div class="boxLoader">
+        <div>
+            <div class="loader">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 402.58 402.58">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+
+                            .cls-1,
+                            .cls-2,
+                            .cls-4,
+                            .cls-6 {
+                                stroke: #382202;
+                                stroke-linejoin: round;
+                                stroke-width: 3px;
+                            }
+
+                            .cls-2 {
+                                fill: #382202;
+                            }
+
+                            .cls-3 {
+                                fill: #fdcf00;
+                            }
+
+                            .cls-4,
+                            .cls-7 {
+                                fill: none;
+                            }
+
+                            .cls-5,
+                            .cls-6 {
+                                fill: #be9b00;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Capa_2" data-name="Capa 2">
+                        <g id="Capa_2-2" data-name="Capa 2">
+                            <polygon class="cls-1"
+                                points="359.5 158.19 315.08 194.13 270.66 230.07 257.98 192.09 245.29 154.11 302.39 156.15 359.5 158.19" />
+                            <polygon class="cls-2"
+                                points="359.83 159.2 315.42 195.14 271 231.09 258.31 193.1 359.83 159.2" />
+                            <polygon class="cls-1"
+                                points="154.06 61.94 190 106.36 225.94 150.78 187.96 163.46 149.98 176.15 152.02 119.04 154.06 61.94" />
+                            <polygon class="cls-2"
+                                points="155.07 61.6 191.01 106.02 226.95 150.44 188.97 163.12 155.07 61.6" />
+                            <polygon class="cls-1"
+                                points="56.12 259.79 100.53 223.85 144.95 187.9 157.64 225.89 170.32 263.87 113.22 261.83 56.12 259.79" />
+                            <polygon class="cls-2"
+                                points="55.78 258.78 100.2 222.84 144.61 186.89 157.3 224.88 55.78 258.78" />
+                            <polygon class="cls-1"
+                                points="261.56 356.04 225.61 311.62 189.67 267.2 227.65 254.52 265.63 241.83 263.6 298.94 261.56 356.04" />
+                            <polygon class="cls-2"
+                                points="260.55 356.38 224.6 311.96 188.66 267.54 226.64 254.85 260.55 356.38" />
+                            <polygon class="cls-3"
+                                points="303.21 10.95 302.78 91.32 285.67 84.23 289.31 181.69 362.66 287.25 234.21 292.06 128.65 365.4 123.84 236.95 50.49 131.39 178.94 126.58 255.91 73.1 240.07 60.92 303.21 10.95" />
+                            <polygon class="cls-4"
+                                points="303.21 10.95 302.78 91.32 285.67 84.23 289.31 181.69 362.66 287.25 234.21 292.06 128.65 365.4 123.84 236.95 50.49 131.39 178.94 126.58 255.91 73.1 240.07 60.92 303.21 10.95" />
+                            <polygon class="cls-5" points="50.49 131.39 201.32 201.78 178.94 126.58 50.49 131.39" />
+                            <polygon class="cls-4" points="50.49 131.39 201.32 201.78 178.94 126.58 50.49 131.39" />
+                            <polygon class="cls-5"
+                                points="303.21 10.95 201.32 201.78 289 183.82 285.67 84.23 302.78 91.32 303.21 10.95" />
+                            <polygon class="cls-4"
+                                points="303.21 10.95 201.32 201.78 289 183.82 285.67 84.23 302.78 91.32 303.21 10.95" />
+                            <polygon class="cls-6" points="362.66 287.25 201.32 201.78 234.21 292.06 362.66 287.25" />
+                            <polygon class="cls-6" points="123.84 236.95 201.32 201.78 128.65 365.4 123.84 236.95" />
+                            <circle class="cls-7" cx="201.29" cy="201.29" r="201.29" />
+                        </g>
+                    </g>
+                </svg>
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+            </div>
+            <h2 style="text-align: center;">Cargando...</h2>
+        </div>
+        <div class="textVersionArriba">
+            <p><strong>Portafolio Abdiel Aldana</strong></p>
+            <p>Version Beta 1</p>
+        </div>
+        <div class="textVersionAbajo">
+            <p>Put* El Que Lo Lea</p>
+        </div>
+    </div>
+
+    <!-- ================================================================================= -->
+    <!-- INGAME PANTALLA CONTENIDO TOTAL -->
+    <div class="scalable" id="resize">
+        <div class="entorno centerContent" id="target">
+            <!-- ================================================================================= -->
+            <!-- HUD InGame -->
+            <div class="buttonAudio" id="mutedAudio">
+                <img class="buttonAudioOff" src="img/recursos/au2.png" />
+                <img id="audioIconOn" class="buttonAudioOn" src="img/recursos/au1.png" />
+            </div>
+            <div style="z-index: 9; color:white; position:absolute; top: 20px; left:20px;">
+                <h1 style="margin: 0; text-shadow: 1px 1px 2px black; ">Zona 0 - Limbo</h1>
+                <h2 style="margin: 0; text-shadow: 1px 1px 2px black; ">Portafolio web</h2>
+            </div>
+            <!-- Pasto (JS) -->
+            <div class="setCapa0" id="capa0"></div>
+
+            <!-- Marco - Arboles (JS) -->
+            <div class="setCapa1" id="capa1"></div>
+
+            <!-- Personaje y Elementos -->
+            <div class="setCapa2" id="capa2 pane" >
+                <!-- ================================================================================================== -->
+                <!-- Personaje -->
+                <div id="box" class="caja1">
+                    <div class="boxCharacter">
+                        <img id="imgCharacter" class="imgCharacter2" src="img/characters/character_PW1.png">
+                    </div>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- Entrada Casa-->
+                <div class="elementoFloat" tipo="entrada" action="true"
+                    style="z-index: 9; position: absolute; top:311px; left: 162px; width: 64px; height: 64px;">
+                    <img src="img/recursos/check.png" style="height: 64px; width: 64px;">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="entrada">
+                    <h2 style="margin:0;">Cerrada</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- Inicio Coordenadas-->
+                <div class="elementoFloat" tipo="inicio" inicio="true"
+                    style="z-index: 9; position: absolute; bottom:128px; left: 320px; width: 64px; height: 64px;">
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- Instrucciones -->
+                <div class="elementoFloat" tipo="instrucciones" profundidad="true" action="true" sound="true"
+                    style="z-index: 9; position: absolute; bottom: 128px; left: 163px; width: 64px; height: 64px">
+                    <img src="img/Cajas/cartel.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="instrucciones">
+                    <h2 style="margin:0;">instrucciones</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- Educación Modal -->
+                <div class="elementoFloat" tipo="educacion"  action="true"
+                    style="z-index: 9; position: absolute; top:calc(45% - 32px); left: 25%; width: 64px; height: 64px">
+                    <img src="img/recursos/book1floor.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="educacion">
+                    <h2 style="margin:0;">Educación</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- NPC Bienvenida -->
+                <div class="elementoFloat" tipo="alberto" profundidad="true" textLine="a1" colision="npc" action="true"
+                    style="z-index: 9; position: absolute; bottom:128px; left: 640px; width: 96px; height: 96px">
+                    <img src="img/characters/c3l.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="alberto">
+                    <h2 style="margin:0;">Alberto</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- NPC's Rumores 1-->
+                <div class="elementoFloat" tipo="alexa" textLine="a2" profundidad="true"  colision="npc"
+                    style="left:1088px; top:384px; z-index: 9; position: absolute; width: 96px; height: 96px;">
+                    <img style="width: 96px; height: 96px; bottom:0; position:absolute;" src="img/recursos/c3.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="alexa">
+                    <h2 style="margin:0;">Alexandra</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- NPC's Rumores 2-->
+                <div class="elementoFloat" tipo="david" textLine="a3"
+                    style="z-index: 9; width: 96px; height: 96px;">
+                    <img style="width: 96px; height: 96px; bottom:0; position:absolute;" src="img/recursos/c4.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="david">
+                    <h2 style="margin:0;">David</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- NPC's Rumores 3-->
+                <div class="elementoFloat" tipo="eduardo" textLine="a4"
+                    style="z-index: 9; width: 96px; height: 96px;">
+                    <img style="width: 96px; height: 96px; bottom:0; position:absolute;" src="img/recursos/c5.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="eduardo">
+                    <h2 style="margin:0;">Eduardo</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- Nota Golem Defence -->
+                <div class="elementoFloat" tipo="golemDefence" action="true"
+                style="z-index: 9; position: absolute; bottom:150px; right:150px; width: 64px; height: 64px;" >
+                    <img src="img/recursos/note1floor.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="golemDefence">
+                    <h2 style="margin:0;">Inicios</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- Experiencia Modal -->
+                <div class="elementoFloat" tipo="exp" action="true"
+                    style="z-index: 9; position: absolute; top:calc(60% + 32px); left: 45%; width: 64px; height: 64px">
+                    <img src="img/recursos/book2floor.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="exp">
+                    <h2 style="margin:0;">Experiencia</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- Habilidades Modal -->
+                <div class="elementoFloat" tipo="skills" action="true"
+                    style="z-index: 9; position: absolute; top:calc(75% + 1px); left: 30%; width: 64px; height: 64px">
+                    <img src="img/recursos/book3floor.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="skills">
+                    <h2 style="margin:0;">Habilidades</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- Nota Tarot -->
+                <div class="elementoFloat" tipo="tarot" action="true"
+                style="z-index: 9; position: absolute; top:50%; right:100px; width: 64px; height: 64px;" >
+                    <img src="img/recursos/note1floor.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="tarot">
+                    <h2 style="margin:0;">Tarot</h2>
+                </div>
+
+
+                <!-- ================================================================================================== -->
+                <!-- Contacto -->
+                <div class="elementoFloat" tipo="contacto" action="true"
+                style="z-index: 9; position: absolute; top:50%; left:20%; width: 64px; height: 64px;" >
+                    <img src="img/recursos/note1floor.png">
+                </div>
+                <div class="hideTextBox texto textoBackground" texto="contacto">
+                    <h2 style="margin:0;">Invocacion</h2>
+                </div>
+
+                <!-- ================================================================================================== -->
+                <!-- Sign Stone -->
+                <div class="elementoFloat" tipo="signStone" colision="npc" profundidad="true" action="true"
+                    style="z-index: 9; position: absolute; left:704px; top: 256px; width: 64px; height: 64px;">
+                    <img src="img/builds/letter1.png" style="width: 64px; height: 64px">
+                </div
+
+                <!-- ================================================================================================== -->
+                <!-- Coliciones -->
+                <!-- Casa -->
+                <div class="elementoFloat" tipo="a2-f7" colision="npc" profundidad="true"
+                    style="z-index: 9; position: absolute; top:-128px; left: 64px; width: 384px; height: 448px;">
+                    <img src="img/builds/bighouse.png" style="width: 384px; height: 448px">
+                </div>
+                <!-- Puerta? -->
+                <div class="elementoFloat" tipo="g1-m1" colision="build"
+                    style="z-index: 9; position: absolute; bottom:0; left: 0; width: 64px; height: 448px;">
+                </div>
+                <div class="elementoFloat" tipo="i3-i9" colision="npc" profundidad="true"
+                    style="z-index: 9; position: absolute; bottom:256px; left: 128px; width: 448px; height: 64px;  background-image: url(img/builds/cerco.png); ">
+                </div>
+                <div class="elementoFloat" tipo="m2-m11" colision="build"
+                    style="z-index: 12; position: absolute; bottom:0; left: 64px; width: 640px; height: 64px; background-image: url(img/builds/arbol.png); ">
+                </div>
+                <div class="elementoFloat" tipo="m12-m13" colision="build"
+                    style="z-index: 12; position: absolute; bottom:0; left: 704px; width: 128px; height: 64px; ">
+                </div>
+                <div class="elementoFloat" tipo="l2-m2" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; bottom:0px; left: 64px; width: 64px; height: 128px;">
+                    <img src="img/builds/arbol.png" style="width: 64px; height: 128px">
+                </div>
+                <div class="elementoFloat" tipo="j2-k2" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; bottom:128px; left: 64px; width: 64px; height: 128px;">
+                    <img src="img/builds/arbol.png" style="width: 64px; height: 128px">
+                </div>
+                <div class="elementoFloat" tipo="h11-i11" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; bottom:256px; left: 640px; width: 64px; height: 128px;">
+                    <img src="img/builds/arbol.png" style="width: 64px; height: 128px">
+                </div>
+                <div class="elementoFloat" tipo="h14-i14" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; bottom:256px; right: 704px; width: 64px; height: 128px;">
+                    <img src="img/builds/arbol.png" style="width: 64px; height: 128px">
+                </div>
+                <div class="elementoFloat" tipo="i17-j17" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; bottom:192px; right: 512px; width: 64px; height: 128px;">
+                    <img src="img/builds/arbol.png" style="width: 64px; height: 128px">
+                </div>
+                <div class="elementoFloat" tipo="l15-m15" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; bottom:0px; right: 640px; width: 64px; height: 128px;">
+                    <img src="img/builds/arbol.png" style="width: 64px; height: 128px">
+                </div>
+                <div class="elementoFloat" tipo="k20-l20" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; bottom:64px; right: 320px; width: 64px; height: 128px;">
+                    <img src="img/builds/arbol.png" style="width: 64px; height: 128px">
+                </div>
+                <div class="elementoFloat" tipo="i24-j24" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; bottom:194px; right: 64px; width: 64px; height: 128px;">
+                    <img src="img/builds/arbol.png" style="width: 64px; height: 128px">
+                </div>
+                <div class="elementoFloat" tipo="l18-l20" colision="tree"
+                    style="z-index: 11; position: absolute; bottom:0px; right: 320px; width: 192px; height: 128px; background-image: url(img/builds/arbol.png); ">
+                </div>
+                <div class="elementoFloat" tipo="f25-j25" colision="build"
+                    style="z-index: 12; position: absolute; bottom:192px; right: 0px; width: 64px; height: 320px;">
+                </div>
+                <div class="elementoFloat" tipo="m14-m20" colision="build"
+                    style="z-index: 12; position: absolute; bottom:0; right: 320px; width: 448px; height: 64px; background-image: url(img/builds/arbol.png); ">
+                </div>
+                <div class="elementoFloat" tipo="i21-m25" colision="build"
+                    style="z-index: 9; position: absolute; right:0; bottom: 0; width: 320px; height: 216px;">
+                </div>
+                <div class="elementoFloat" tipo="a15-d25" colision="npc"
+                    style="z-index: 9; position: absolute; right:0; top: 0; width: 704px; height: 256px;">
+                </div>
+                <div class="elementoFloat" tipo="e18-f18" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; right:448px; top: 192px; width: 64px; height: 128px;">
+                    <img src="img/builds/arbol.png" style="width: 64px; height: 128px">
+                </div>>
+                <div class="elementoFloat" tipo="a8-a14" colision="build"
+                    style="z-index: 9; position: absolute; left:448px; top: 0; width: 448px; height: 64px;">
+                </div>
+                <div class="elementoFloat" tipo="f22-f23" colision="tree"
+                    style="z-index: 9; position: absolute; right:165px; top: 192px; width: 90.6667px; height: 128px;">
+                </div>
+                <div class="elementoFloat" tipo="d13-f13" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; left:768px; top: 192px; width: 64px; height: 128px;">
+                    <img src="img/builds/lampara.png" style="width: 64px; height: 128px">
+                    <div class="lightLamp"></div>
+                </div>
+                <div class="elementoFloat" tipo="d1-f1" colision="build" profundidad="true"
+                    style="z-index: 9; position: absolute; left:0px; top: 192px; width: 64px; height: 128px;">
+                    <img src="img/builds/lampara.png" style="width: 64px; height: 128px">
+                    <div class="lightLamp"></div>
+                </div>
+                <div class="elementoFloat" tipo="d21-f21" colision="tree" profundidad="true"
+                    style="z-index: 9; position: absolute; right:256px; top: 192px; width: 64px; height: 128px;">
+                    <img src="img/builds/lampara.png" style="width: 64px; height: 128px">
+                    <!-- <div class="lightLamp"></div> -->
+                </div>
+                <div class="elementoFloat" tipo="b8-b8" colision="tree"
+                    style="z-index: 9; position: absolute; left:448px; top: 64px; width: 64px; height: 64px;">
+                </div>
+                <div class="elementoFloat" tipo="b11-b14" colision="tree"
+                    style="z-index: 9; position: absolute; left:640px; top: 64px; width: 256px; height: 64px;">
+                </div>
+                <div class="elementoFloat" tipo="j21-m25"
+                    style="z-index: 12; position: absolute; right:0; bottom: 0; width: 320px; height: 320px;">
+                    <img src="img/builds/bigHouse2.png" style="width: 320px; height: 448px">
+                </div>
+
+            </div>
+
+            <!-- Nubes -->
+            <div class="setCapa3" id="capa3">
+                <div style="position: relative; height: 100%; width: 100%;">
+                    <img class="nube1" src="img/nubes/nube4.png">
+                    <img class="nube2" src="img/nubes/nube10.png">
+                    <img class="nube3" src="img/nubes/nube3.png">
+                </div>
+            </div>
+
+            <!-- Notificaciones -->
+            <div class="setCapa4" id="capa4">
+                <div style="height: 70px; width: 200px; box-shadow: inset 0px 0px 26px 0px rgba(0,0,0,0.88); background-color: #3A3A39; border: solid 3px #2A2A2A; border-radius: 15px;"></div>
+            </div>
+
+            <!-- Modals -->
+            <div class="setCapa5" id="capa5">
+                <div class="setCapa10 contentModals openModals" id="capa10">
+
+                    <!-- ================================================================================================== -->
+                    <!-- Instrucciones -->
+                    <div class="modal sign openModal" id="instrucciones">
+                        <div class="surfaceStyle">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <div class="contentData p20">
+                                <div style="padding: 0 10px;">
+                                    <h1 style="text-align: center;">LEE ANTES DE CONTINUAR!!</h1>
+                                    <div style="display: inline-flex; justify-content: center; width: 100%; margin: 5px 0px;">
+                                        <img style="width: 50%; height: auto;" src="img/recursos/separador.png">
+                                    </div>
+                                    <p>
+                                        Para poderte mover e interactuar con la página es necesario el uso de las siguientes
+                                        teclas. Si estas en celular o tableta no podras disfrutar de la experiencia completa de
+                                        mi portafolio.
+                                    </p>
+                                    <p>
+                                        Con el Enter, se pone la Pantalla Completa
+                                    </p>
+                                    <p>
+                                        Con el Escape sales de los modals. (Carteles, Libors, Dialogos, etc.)
+                                    </p>
+                                    <div style="display: inline-flex; justify-content: space-around; align-items: center; width: 100%;">
+                                        <img style="width: 200px; height: auto;" src="img/recursos/keys.png">
+                                        <p>
+                                            Para mover al personaje: <br />
+                                            W > Arriba <br />
+                                            S > Abajo <br />
+                                            A > Izquierda <br />
+                                            D > Derecha <br />
+                                            Barra > Acción con el entorno <br />
+                                        </p>
+                                    </div>
+                                    <p>Para tener una mejor experiencia puedes activar el sonido de la pagina, el bboton esta en la parte superior derecha.</p>
+                                    <p>Al activar o desactivar el sonido, se guardara una cookie basica para recordar el estado de la musica</p>
+                                    <div style="display: inline-flex; justify-content: center; width: 100%; margin: 30px 0px;">
+                                        <img style="width: 50%; height: auto;" src="img/recursos/separador.png">
+                                    </div>
+                                    <p style="text-align: justify; font-size: 30px !important;">
+                                        Bien!, ahora que conoces los controles para poder navegar, cierra el cartel y explora este pequeño mapa.
+                                    </p>
+                                    <p>Si no quieres vivir la experiencia, puedes descargar un aburrido PDF</p>
+                                    <div style="display: inline-flex; justify-content: center; width: 100%;">
+                                        <a href="CV2021 Adolfo Abdiel Ramirez Aldana1.pdf" target="_blank" rel="noopener noreferrer" class="btn">Descargar PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- Educación Modal -->
+                    <div class="modal book closeModal" id="educacion">
+                        <div class="paper">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <div class="contentDataNoScroll">
+                                <div style="display: inline-flex; justify-content: space-between; height: 100%; width: 100%;">
+                                    <div class="overflowAuto" style=" height: 100%; width: 45%; max-width: 45%; padding: 0 10px;">
+                                        <div style="height: 100%; width: 100%; display: inline-flex; justify-content: center; align-items: center;">
+                                            <img style="filter: sepia(0.5); height: auto; width: 80%;" src="img/portafolio/edu.png" />
+                                        </div>
+
+                                    </div>
+                                    <div class="overflowAuto" style="height: 100%; width: 45%; padding: 0 10px;">
+                                        <h1 style="text-align: center; margin-bottom: 0; color:#8F563B;">Educacion</h1>
+
+                                        <div style="display: inline-flex; justify-content: center; width: 100%; margin: 5px 0px;">
+                                            <img style="width: 70%; height: auto;" src="img/recursos/separador.png">
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">Curso de Fotografia Digital</h2>
+                                            <h3 style=" margin: 0;">Preparatoria 8</h3>
+                                            <h3 style=" margin: 0;">2010</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">Curso de Fotografia</h2>
+                                            <h3 style=" margin: 0;">Facultad de Arquitectura</h3>
+                                            <h3 style=" margin: 0;">2011</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">Licenciatura en Diseño Grafico</h2>
+                                            <h3 style=" margin: 0;">Facultad de Artes Visuales</h3>
+                                            <h3 style=" margin: 0;">2011 - 2016</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">Seminario de Marketing Digital</h2>
+                                            <h3 style=" margin: 0;">Facultad de Ingenieria Civil</h3>
+                                            <h3 style=" margin: 0;">2017</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">Programacion</h2>
+                                            <h3 style=" margin: 0;">Laborando en MovitSG y Envia.com</h3>
+                                            <h3 style=" margin: 0;">2018 - 2021</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- Alberto -->
+                    <div class="modal npc closeModal" id="alberto">
+                        <div class="npcDialog">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <img style="width: 250px; height: 250px; bottom:20px; left: 0px; position:absolute;" src="img/recursos/characterNpc2.png">
+                            <div class="overflowAuto contentData">
+                                <p><span id="textoNPC1" class="textoNPC"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- Alexandra -->
+                    <div class="modal npc closeModal" id="alexa">
+                        <div class="npcDialog">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <img style="width: 250px; height: 250px; bottom:20px; left: 0px; position:absolute;" src="img/recursos/c3.png">
+                            <div class="overflowAuto contentData">
+                                <p><span id="textoNPC2" class="textoNPC"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- David -->
+                    <div class="modal npc closeModal" id="david">
+                        <div class="npcDialog">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <img style="width: 250px; height: 250px; bottom:20px; left: 0px; position:absolute;" src="img/recursos/c4.png">
+                            <div class="overflowAuto contentData">
+                                <p><span id="textoNPC3" class="textoNPC"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- Eduardo -->
+                    <div class="modal npc closeModal" id="eduardo">
+                        <div class="npcDialog">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <img style="width: 250px; height: 250px; bottom:20px; left: 0px; position:absolute;" src="img/recursos/c5.png">
+                            <div class="overflowAuto contentData">
+                                <p><span id="textoNPC4" class="textoNPC"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- Golem Defence -->
+                    <div class="modal note closeModal" rotate="true" id="golemDefence" >
+                        <div class="noteBack">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <div class="contentDataNoScroll">
+                                <div style="display: inline-flex; justify-content: space-between; height: 100%;">
+                                    <div class="overflowAuto" style=" height: auto; width: 50%; max-width: 50%; padding: 0 10px;">
+                                        <div style="height: 100%; width: 100%; display: inline-flex; justify-content: center; align-items: center;">
+                                            <div style="width: 80%; margin: 10px 30px; height: auto;">
+                                                <img style="height: 100%; width: 100%;" src="img/portafolio/logoGolem.png" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="overflowAuto" style="height: 100%; width: 50%; padding: 0 10px;">
+                                        <h1 style="text-align: center; margin-bottom: 0;">Los Inicios</h1>
+                                        <div style="display: inline-flex; justify-content: center; width: 100%; margin: 10px 0px;">
+                                            <img style="width: 60%; height: auto;" src="img/recursos/separador.png">
+                                        </div>
+                                        <p style="text-align: justify; font-size: 20px;">
+                                            Golem Defence, es el proyecto actual en el que trabajo. A hoy 21 de Octubre del 2021, tengo poco mas de 15 días desarrollando la idea desde cero.
+                                        </p>
+                                        <p style="text-align: justify; font-size: 20px;">
+                                            El codigo de lo que vez en estos momentos, esta creado casi el 100% por mi. Las unicas librerias externas que uso para el soporte de la base, es Typed.js y JQuery.js.
+                                        </p>
+                                        <p style="text-align: justify; font-size: 20px;">
+                                            Los graficos en parte son de mi creacion, los modals (Libros, cuadros de texto, esta hoja, son creados por mi. Los personjaes y el entorno, fueron comprados en diferentes paginas.)
+                                        </p>
+                                        <p style="text-align: justify; font-size: 20px;">
+                                            La idea principal del juego se parece a Clash of Clans, OGame, etc. El plus del juego, es que tendra escenarios interactivos como lo haz experimentado, un mapa amplio para explorar, diferentes zonas, crafteos, recoleccion de minerales, etc.
+                                        </p>
+                                        <p style="text-align: justify; font-size: 20px;">
+                                            En algun momento buscare finaciamiento para el proyecto, ya que le tengo fe. Si estas interesado, busca mi contacto entre todos los objetos de la zona.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- Educación Modal -->
+                    <div class="modal book closeModal" id="exp">
+                        <div class="paper">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <div class="contentDataNoScroll">
+                                <div style="display: inline-flex; justify-content: space-between; height: 100%; width: 100%;">
+                                    <div class="overflowAuto" style=" height: 100%; width: 45%; max-width: 45%; padding: 0 10px;">
+                                        <div style="height: 100%; width: 100%; display: inline-flex; justify-content: center; align-items: center;">
+                                            <img style="filter: sepia(0.5); height: auto; width: 80%;" src="img/portafolio/exp.png" />
+                                        </div>
+
+                                    </div>
+                                    <div class="overflowAuto" style="height: 100%; width: 45%; padding: 0 10px;">
+                                        <h1 style="text-align: center; margin-bottom: 0; color:#8F563B;">Experiencia</h1>
+
+                                        <div style="display: inline-flex; justify-content: center; width: 100%; margin: 5px 0px;">
+                                            <img style="width: 70%; height: auto;" src="img/recursos/separador.png">
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">Diseñador Grafico (DG)</h2>
+                                            <h3 style=" margin: 0;">MAVA Publicidad</h3>
+                                            <h3 style=" margin: 0;">2014</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">DG - Atencion al Cliente</h2>
+                                            <h3 style=" margin: 0;">Facultad de Ingenieria Civil</h3>
+                                            <h3 style=" margin: 0;">2015 - 2017</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">Instructor de Software Adobe</h2>
+                                            <h3 style=" margin: 0;">Facultad de Ingenieria Civil</h3>
+                                            <h3 style=" margin: 0;">2016 - 2017</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">DG - Community Manager</h2>
+                                            <h3 style=" margin: 0;">IMOL Instituto de Microcirugia Ocular</h3>
+                                            <h3 style=" margin: 0;">2017</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">DG - ForntEnd</h2>
+                                            <h3 style=" margin: 0;">Movit SG</h3>
+                                            <h3 style=" margin: 0;">2017 - 2020</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">Maestro, Ilustracion Digital</h2>
+                                            <h3 style=" margin: 0;">Univercidad EDEC</h3>
+                                            <h3 style=" margin: 0;">2019</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 30px">
+                                            <h2 style="color:#8F563B; margin: 0;">Desarrollador ReactJS</h2>
+                                            <h3 style=" margin: 0;">envia.com</h3>
+                                            <h3 style=" margin: 0;">2020 - 2021</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- Habilidades Modal -->
+                    <div class="modal book closeModal" id="skills">
+                        <div class="paper">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <div class="contentDataNoScroll">
+                                <div style="display: inline-flex; justify-content: space-between; height: 100%; width: 100%;">
+                                    <div class="overflowAuto" style=" height: 100%; width: 45%; max-width: 45%; padding: 0 10px;">
+                                        <div style="height: 100%; width: 100%; display: inline-flex; justify-content: center; align-items: center;">
+                                            <img style="filter: sepia(0.5); height: auto; width: 80%;" src="img/portafolio/skills.png" />
+                                        </div>
+
+                                    </div>
+                                    <div class="overflowAuto" style="height: 100%; width: 45%; padding: 0 10px;">
+                                        <h1 style="text-align: center; margin-bottom: 0; color:#8F563B;">Habilidades</h1>
+
+                                        <div style="display: inline-flex; justify-content: center; width: 100%; margin: 5px 0px;">
+                                            <img style="width: 70%; height: auto;" src="img/recursos/separador.png">
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Illustrator</h2>
+                                            <h3 style=" margin: 0;">Creative Cloud Adobe</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por90"></div></div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Photoshop</h2>
+                                            <h3 style=" margin: 0;">Creative Cloud Adobe</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por70"></div></div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Adobe XD</h2>
+                                            <h3 style=" margin: 0;">Creative Cloud Adobe</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por60"></div></div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Wordpress</h2>
+                                            <h3 style=" margin: 0;">No se que es</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por80"></div></div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">JavaScript</h2>
+                                            <h3 style=" margin: 0;">Lenguaje</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por80"></div></div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">PHP</h2>
+                                            <h3 style=" margin: 0;">Lenguaje</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por50"></div></div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">SQL</h2>
+                                            <h3 style=" margin: 0;">Lenguaje</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por40"></div></div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">HTML y CSS</h2>
+                                            <h3 style=" margin: 0;">Lenguaje</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por90"></div></div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">ReactJS</h2>
+                                            <h3 style=" margin: 0;">Lenguaje</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por60"></div></div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Tarot</h2>
+                                            <h3 style=" margin: 0;">Adivinacion</h3>
+                                        </div>
+                                        <div class="progress"><div class="progress-value por90"></div></div>
+
+                                        <div style="display: inline-flex; justify-content: center; width: 100%; margin: 25px 0px 0 0;">
+                                            <img style="width: 70%; height: auto;" src="img/recursos/separador.png">
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Adobe Premier</h2>
+                                            <h3 style=" margin: 0;">Software</h3>
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Foundation</h2>
+                                            <h3 style=" margin: 0;">Libreria CSS</h3>
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Bootstrap</h2>
+                                            <h3 style=" margin: 0;">Libreria CSS</h3>
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">GitHub</h2>
+                                            <h3 style=" margin: 0;">Herramienta</h3>
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Google Analytics</h2>
+                                            <h3 style=" margin: 0;">Publicidad</h3>
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Google GoogleAds</h2>
+                                            <h3 style=" margin: 0;">Publicidad</h3>
+                                        </div>
+
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">Scrum</h2>
+                                            <h3 style=" margin: 0;">TeamWork</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- Tarot -->
+                    <!-- style="transform: perspective( 1500px ) rotateX( 38deg );" -->
+                    <div class="modal note closeModal" rotate="true" id="tarot">
+                        <div class="noteBack">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <div class="contentDataNoScroll">
+                                <div style="display: inline-flex; justify-content: space-between; height: 100%;">
+                                    <div class="overflowAuto" style=" height: auto; width: 50%; max-width: 50%; padding: 0 10px;">
+                                        <div style="height: 100%; width: 100%; display: inline-flex; justify-content: center; align-items: center;">
+                                            <div style="width: 80%; margin: 10px 30px; height: auto;">
+                                                <img style="height: 100%; width: 100%;" src="img/recursos/cards.png" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="overflowAuto" style="height: 100%; width: 50%; padding: 0 10px;">
+                                        <h1 style="text-align: center; margin-bottom: 0;">Tarot</h1>
+                                        <div style="display: inline-flex; justify-content: center; width: 100%; margin: 10px 0px;">
+                                            <img style="width: 60%; height: auto;" src="img/recursos/separador.png">
+                                        </div>
+                                        <p style="text-align: justify; font-size: 20px;">
+                                            Soy tarotista por Hobbie,mis predicciones tienen un 90% de acierto al leer una persona, y un 80% de acierto al predecir el futuro.
+                                        </p>
+                                        <p style="text-align: justify; font-size: 20px;">
+                                            La verdad me divierte mucho el leer las cartas, y mas porque lo suelo hacer en vivo desde twitch.tv/abdyaldana. Claro que tambien hago sesiones privadas por chat o videollamada.
+                                        </p>
+                                        <div style="display: inline-flex; justify-content: center; width: 100%;">
+                                            <a href="https://tarot.abdielaldana.com" target="_blank" rel="noopener noreferrer" class="btn">Ir al sitio</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- Contacto -->
+                    <div class="modal note closeModal" rotate="true" id="contacto">
+                        <div class="noteBack">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <div class="contentDataNoScroll">
+                                <div style="display: inline-flex; justify-content: space-between; height: 100%;">
+                                    <div class="overflowAuto" style=" height: auto; width: 50%; max-width: 50%; padding: 0 10px;">
+                                        <div style="height: 100%; width: 100%; display: inline-flex; justify-content: center; align-items: center;">
+                                            <div style="width: 70%; margin: 10px 30px; height: auto;">
+                                                <img style="height: 100%; width: 100%;" src="img/recursos/location.png" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="overflowAuto" style="height: 100%; width: 50%; padding: 0 10px;">
+                                        <h1 style="text-align: center; margin-bottom: 0;">Invocame</h1>
+                                        <div style="display: inline-flex; justify-content: center; width: 100%; margin: 10px 0px;">
+                                            <img style="width: 60%; height: auto;" src="img/recursos/separador.png">
+                                        </div>
+                                        <div style="margin: 30px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">8129072892</h2>
+                                            <h3 style=" margin: 0;">Celular</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">abdielaldanadg@gmail.com</h2>
+                                            <h3 style=" margin: 0;">Correo</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">abdielaldana.com</h2>
+                                            <h3 style=" margin: 0;">Blog Personal</h3>
+                                        </div>
+                                        <div style="margin: 10px 0 10px 10px">
+                                            <h2 style="color:#8F563B; margin: 0;">twitch.tv/abdyaldana</h2>
+                                            <h3 style=" margin: 0;">Canal de Twitch</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ================================================================================================== -->
+                    <!-- signStone -->
+                    <div class="modal signStone closeModal" rotate="true" id="signStone">
+                        <div class="signStoneContent">
+                            <div>
+                                <img class="buttonClose" src="img/recursos/close.png" />
+                            </div>
+                            <div class="contentData">
+                                <img style="position: absolute; bottom: 50px; height: 64px; width: 64px; filter: opacity(.5);" src="img/recursos/bringstone.png" alt="" srcset="">
+                                <div
+                                    style="display: inline-flex; justify-content: center; align-items: center; width: 100%; height: 100%;">
+                                    <div style="text-align: center;">
+                                        <h1 style="margin: 0; font-size: 60px;" >Zona 0 - Limbo</h1>
+                                        <h2 style="margin: 0; font-size: 45px;">Portafolio de Abdiel Aldana</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- <div class="setCapa5" id="capa5">
+                <div style="height:500px; width:1200px;  margin: 100px auto; transform: perspective( 632px ) rotateX( 28deg ); background-image: url(img/modals/hoja.png); background-repeat: no-repeat; background-size: 100% 100%;">
+                    <div class="noteBack">
+                        <div>
+                            <img class="buttonClose" src="img/recursos/close.png" />
+                        </div>
+                        <div class="contentDataNoScroll">
+                            <div style="display: inline-flex; justify-content: space-between; height: 100%;">
+                                <div class="overflowAuto" style=" height: auto; width: 50%; max-width: 50%; padding: 0 10px;">
+                                    <div style="height: 100%; width: 100%; display: inline-flex; justify-content: center; align-items: center;">
+                                        <div style="width: 80%; margin: 10px 30px; height: auto;">
+                                            <img style="height: 100%; width: 100%;" src="img/recursos/cards.png" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overflowAuto" style="height: 100%; width: 50%; padding: 0 10px;">
+                                    <h1 style="text-align: center; margin-bottom: 0;">Tarot</h1>
+                                    <div style="display: inline-flex; justify-content: center; width: 100%; margin: 10px 0px;">
+                                        <img style="width: 60%; height: auto;" src="img/recursos/separador.png">
+                                    </div>
+                                    <p style="text-align: justify; font-size: 20px;">
+                                        Soy tarotista por Hobbie,mis predicciones tienen un 90% de acierto al leer una persona, y un 80% de acierto al predecir el futuro.
+                                    </p>
+                                    <p style="text-align: justify; font-size: 20px;">
+                                        La verdad me divierte mucho el leer las cartas, y mas porque lo suelo hacer en vivo desde twitch.tv/abdyaldana. Claro que tambien hago sesiones privadas por chat o videollamada.
+                                    </p>
+                                    <div style="display: inline-flex; justify-content: center; width: 100%;">
+                                        <a href="https://tarot.abdielaldana.com" target="_blank" rel="noopener noreferrer" class="btn">Ir al sitio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="hud centerContent" style="
+            z-index:9;opacity: .8;  width: 1598px; height: 128px;
+            background-color: #4D4D4C;
+            border:solid 2px #191817;
+            -webkit-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.75);
+            box-shadow: inset 0px 0px 50px 0px rgba(0,0,0,0.75);
+            ">
+
+            <div class="asd1"></div>
+            <div class="asd2"></div>
+            <div class="asd3"></div>
+            <h2>Aqui va ir un menu bien ricolino.</h2>    
+            <div>
+                <button onclick="Sonido(0)">DO</button>
+                <button onclick="Sonido(1)">DO#</button>
+                <button onclick="Sonido(2)">RE</button>
+                <button onclick="Sonido(3)">RE#</button>
+                <button onclick="Sonido(4)">MI</button>
+                <button onclick="Sonido(5)">FA</button>
+                <button onclick="Sonido(6)">FA#</button>
+                <button onclick="Sonido(7)">SOL</button>
+                <button onclick="Sonido(8)">SOL#</button>
+                <button onclick="Sonido(9)">LA</button>
+                <button onclick="Sonido(10)">LA#</button>
+                <button onclick="Sonido(11)">SI</button>
+            </div>
+
+            <input type="range" id="vol" name="volGeneral" min="0" max="100" value="10">
+        </div>
+    </div>
+
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/texts.js"></script>
+    <script src="js/sounds.js"></script>
+    <script src="js/motion.js"></script>
+    <script src="js/area.js"></script>
+    <script src="js/objectsAction.js"></script>
+    <script src="js/svgEdits.js"></script>
+</body>
+
+</html>

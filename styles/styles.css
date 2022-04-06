@@ -1,0 +1,725 @@
+body {
+    font-family: "RPGSystem";
+    margin: 0px !important;
+    letter-spacing: 3px;
+}
+
+/* SCROLL BARR SING */
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #8F563B;
+    border-radius: 0px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #663931;
+}
+
+*::-webkit-scrollbar-track {
+    background: #E2D09E;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+
+
+.entorno {
+    /* background-color: antiquewhite; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* top: 0; */
+    /* left: 0; */
+}
+
+html,
+* {
+    cursor: url("http://miweb.com/imagenes/mi-cursor.png");
+}
+
+.btn {
+    background: #8F563B;
+    background-image: -webkit-linear-gradient(top, #8F563B, #663931);
+    background-image: -moz-linear-gradient(top, #8F563B, #663931);
+    background-image: -ms-linear-gradient(top, #8F563B, #663931);
+    background-image: -o-linear-gradient(top, #8F563B, #663931);
+    background-image: linear-gradient(to bottom, #8F563B, #663931);
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    color: #C1D00A;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #4d2c26 3px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #663931;
+    background-image: -webkit-linear-gradient(top, #663931, #8F563B);
+    background-image: -moz-linear-gradient(top, #663931, #8F563B);
+    background-image: -ms-linear-gradient(top, #663931, #8F563B);
+    background-image: -o-linear-gradient(top, #663931, #8F563B);
+    background-image: linear-gradient(to bottom, #663931, #8F563B);
+    text-decoration: none;
+  }
+
+/* ------------------Modals Content---------------------- */
+
+.cara {
+    /* transform: scale(3); */
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    overflow: hidden;
+    /* margin: 0px; */
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cara>img {
+    filter: sepia(1) opacity(.8) brightness(.8);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* right: 0; */
+    /* bottom: -100%; */
+    margin: auto;
+    height: 200px;
+    width: 200px;
+}
+
+
+/* ------------------Audio---------------------- */
+
+.buttonAudio {
+    z-index: 15;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    transition: all .3s;
+}
+
+.buttonAudioOff {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: all .3s;
+}
+
+.buttonAudioOn {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.buttonAudio:hover .buttonAudioOff {
+    filter: brightness(1.2);
+}
+
+.buttonAudio:hover .buttonAudioOn {
+    filter: brightness(1.2);
+}
+
+
+/* Luces */
+.lightLamp {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    height: 32px;
+    width: 32px;
+    background-color: rgb(231, 197, 122);
+    border-radius: 15px;
+    filter: blur(10px) opacity(.7);
+    box-shadow: 0 0 30px rgb(236, 206, 140);
+    animation: luz1 3s infinite ease-in-out;
+}
+
+@keyframes luz1 {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.3);
+    }
+    80% {
+        transform: scale(1.3);
+    }
+}
+
+/* .elementoFloat[tipo]{
+    filter: brightness(.5) !important;
+} */
+/* .setCapa2{
+    filter: brightness(.5);
+}
+.setCapa0 {
+    filter: brightness(.5);
+} */
+
+/* ------------------CAPAS---------------------- */
+.setCapa0 {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    position: absolute;
+    height: 768px;
+    width: 1600px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-size: cover;
+    background-image: url("../img/maps/city_00.png");
+}
+
+.setCapa1 {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    position: absolute;
+    top: 0;
+    /* left: 0; */
+    z-index: 1;
+}
+
+.setCapa2 {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* left: 0; */
+    z-index: 2;
+    /* border:solid 3px red; */
+}
+
+.setCapa3 {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 3;
+    /* border:solid 3px black; */
+}
+
+.setCapa4 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 4;
+    /* border:solid 3px black; */
+}
+
+.setCapa5 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 5;
+    /* border:solid 3px black; */
+}
+
+.setCapa9 {
+    /* height: 100vh; */
+    /* width: 100vw; */
+    position: absolute;
+    top: 0px;
+    /* left: 0; */
+    z-index: 9;
+    /* border:solid 3px red; */
+}
+
+.setCapa10 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 10;
+    /* border: solid 3px red;
+    /* border:solid 3px red; */
+}
+
+/* ------------------Botones Movimiento Pantalla---------------------- */
+
+.buttonsControls {
+    /* background-color: aliceblue; */
+    position: absolute;
+    bottom: 200px;
+    left: calc(50% - 120px);
+    height: 240px;
+    width: 240px;
+}
+
+.button img {
+    height: 80px;
+    width: 80px;
+}
+
+#buttonUp {
+    z-index: 50;
+    height: 80px;
+    width: 80px;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: calc(50% - 40px);
+}
+
+#buttonLeft {
+    z-index: 50;
+    height: 80px;
+    width: 80px;
+    /* background-color: red; */
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 0;
+}
+
+#buttonAction {
+    z-index: 50;
+    height: 80px;
+    width: 80px;
+    /* background-color: red; */
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+}
+
+#buttonRight {
+    z-index: 50;
+    height: 80px;
+    width: 80px;
+    /* background-color: red; */
+    position: absolute;
+    top: calc(50% - 40px);
+    right: 0;
+}
+
+#buttonDown {
+    z-index: 50;
+    height: 80px;
+    width: 80px;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 40px);
+}
+
+
+
+/* ------------------Personaje---------------------- */
+
+.clip {
+    /* transform: scale(3); */
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+    /* margin: 0px; */
+    position: relative;
+}
+
+.clip>.pasto {
+    position: absolute;
+    top: -261px;
+    left: -56px;
+    /* right: 0; */
+    /* bottom: -100%; */
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.clip>.arbolUp {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* right: 0; */
+    /* bottom: -100%; */
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.clip>.arbolDown {
+    position: absolute;
+    top: -64px;
+    left: 0px;
+    /* right: 0; */
+    /* bottom: -100%; */
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.clip>.mixArbol {
+    position: absolute;
+    top: 0px;
+    left: -64px;
+    /* right: 0; */
+    /* bottom: -100%; */
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.clip>.tierra {
+    position: absolute;
+    top: -128px;
+    left: -128px;
+    /* right: 0; */
+    /* bottom: -100%; */
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.clip>.tierraIzq {
+    position: absolute;
+    top: -256px;
+    left: -128px;
+    /* right: 0; */
+    /* bottom: -100%; */
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.clip>.tierraDer {
+    position: absolute;
+    top: -256px;
+    left: 0px;
+    /* right: 0; */
+    /* bottom: -100%; */
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.clip>.nada {
+    position: absolute;
+    top: -128px;
+    left: -256px;
+    /* right: 0; */
+    /* bottom: -100%; */
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.flex {
+    display: -webkit-box;
+    height: 64px;
+    width: 100%;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+.caja1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* top:500px; */
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#boxCharacter {
+    width: 96px;
+    height: 96px;
+    overflow: hidden;
+    margin: 0px;
+    position: relative;
+}
+
+#imgCharacter {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.imgCharacter {
+    top: 0px !important;
+    left: 0px !important;
+}
+
+.imgCharacter2 {
+    top: 0px !important;
+    left: -96px !important;
+}
+
+.imgCharacter3 {
+    top: 0px !important;
+    left: -192px !important;
+}
+
+.imgCharacter4 {
+    top: -96px !important;
+    left: 0px !important;
+}
+
+.imgCharacter5 {
+    top: -96px !important;
+    left: -96px !important;
+}
+
+.imgCharacter6 {
+    top: -96px !important;
+    left: -192px !important;
+}
+
+.imgCharacter7 {
+    top: -192px !important;
+    left: 0px !important;
+}
+
+.imgCharacter8 {
+    top: -192px !important;
+    left: -96px !important;
+}
+
+.imgCharacter9 {
+    top: -192px !important;
+    left: -192px !important;
+}
+
+.imgCharacter10 {
+    top: -288px !important;
+    left: 0px !important;
+}
+
+.imgCharacter11 {
+    top: -288px !important;
+    left: -96px !important;
+}
+
+.imgCharacter12 {
+    top: -288px !important;
+    left: -192px !important;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/* ----------------------------------NUBES---------------------------------------- */
+/* ------------------------------------------------------------------------------- */
+
+.nube1 {
+    position: absolute;
+    /* top: 80%; */
+    /* left: -100%; */
+    /* height: 100%;
+    width: auto; */
+    filter: opacity(.5);
+    z-index: 11;
+    animation: nube1A 10s infinite ease-out;
+}
+
+.nube2 {
+    animation: nube2A 28s infinite ease-in;
+    position: absolute;
+    filter: opacity(.8);
+    /* top: 50%;
+    left: 80%; */
+    /* height: 100%;
+    width: auto; */
+    z-index: 11;
+}
+
+.nube3 {
+    animation: nube3A 20s infinite ease-in-out;
+    position: absolute;
+    /* top: 30%;
+    left: 50%; */
+    filter: opacity(.5);
+    /* height: 100%;
+    width: auto; */
+    z-index: 11;
+}
+
+
+@keyframes nube1A {
+
+    0%,
+    100% {
+        left: -270px;
+        top: -100%
+    }
+
+    10% {
+        left: -720px;
+        top: 30%
+    }
+
+    80% {
+        left: 100%;
+        top: 30%
+    }
+
+    90% {
+        left: 100%;
+        top: -100%
+    }
+
+}
+
+@keyframes nube2A {
+
+    0%,
+    100% {
+        left: -720px;
+        top: -100%
+    }
+
+    10% {
+        left: -100%;
+        top: -100%
+    }
+
+    11% {
+        top: 50%;
+        left: -720px;
+    }
+
+    80% {
+        top: 50%;
+        left: 100vw;
+    }
+
+    81% {
+        top: -100%;
+        left: 100vw;
+    }
+
+
+}
+
+@keyframes nube3A {
+
+    0%,
+    100% {
+        left: -625px;
+        top: -100%
+    }
+
+    10% {
+        left: -100%;
+        top: -100%
+    }
+
+    11% {
+        top: 10%;
+        left: -625px;
+    }
+
+    70% {
+        top: 10%;
+        left: 100vw;
+    }
+
+    71% {
+        top: -100%;
+        left: 100vw;
+    }
+
+
+}
+
+
+.textoBackground {
+    position: absolute;
+    padding: 15px 10px;
+    background-image: url(../img/recursos/titleBackground.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+.textoBackground h2{
+    color: #fff;
+    font-size: 18px;
+}
+
+.hideTextBox.texto.textoBackground{
+    margin-left: -10px;
+}
+.showTextBox.texto.textoBackground{
+    margin-left: -10px;
+}
+
+
+.showTextBox {
+    /* transform: translateY(50px); */
+
+    animation: aparicion .3s ease-in;
+}
+
+.hideTextBox {
+    /* display: block; */
+    /* opacity: 1;
+    transform: translateY(0px); */
+    /* display: none; */
+    /* transform: translateY(50px); */
+    animation: desaparicion .3s;
+    opacity: 0;
+    /* display: block; */
+}
+
+.texto {
+    position: absolute;
+}
+
+@keyframes aparicion {
+    from {
+        /* display: block; */
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes desaparicion {
+    from {
+        /* display: block; */
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    to {
+        /* display: none !important; */
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+

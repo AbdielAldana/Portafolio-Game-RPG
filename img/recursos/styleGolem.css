@@ -1,0 +1,77 @@
+.golem-1{fill:#354048;opacity:0.5;}
+
+/* #normal .golem-2{fill:#ddd19f;} */
+#normal .golem-2{fill:#c3b286;}
+#normal .golem-4{fill:#8e7b5b;}
+#normal .golem-5{fill:#483829;}
+#normal .golem-3{fill:#2a1d26;}
+#normal .golem-7{fill:#60ce3b;}
+#normal .golem-6{fill:#2e9335;}
+
+#agua .golem-2{fill:#D6ECEE;}
+#agua .golem-4{fill:#8BA8AA;}
+#agua .golem-5{fill:#5D7071;}
+#agua .golem-3{fill:#000000;}
+#agua .golem-7{fill:#B0EEC3;}
+#agua .golem-6{fill:#75AF87;}
+
+#electrico .golem-2{fill:#f0e2a0;}
+#electrico .golem-4{fill:#c2b983;}
+#electrico .golem-5{fill:#928b62;}
+#electrico .golem-3{fill:#3c3928;}
+#electrico .golem-7{fill:#7db5cb;}
+#electrico .golem-6{fill:#3b99b5;}
+
+
+/* object#GolemImg {
+    background-color: red;
+} */
+/* #GolemImg1 .golem-1{
+    fill: red !important;
+} */
+
+.golemBook {
+    height: 600px;
+    width: auto;
+    margin-bottom: 80px;
+}
+
+.p_fuego .golem-3 {
+    animation: blinker1 2s ease infinite;
+  }
+  
+  @keyframes blinker1 {
+    50% {
+        fill: black;
+    }
+    0%, 100% {
+        fill: rgb(206, 46, 46);
+    }
+  }
+
+
+.p_agua .golem-3{
+    animation: blinker 2s ease infinite;
+  }
+
+@keyframes blinker {
+    50% {
+        fill: black;
+    }
+    0%, 100% {
+        fill: rgb(77, 136, 224);
+    }
+  }
+
+.p_planta .golem-3{
+    animation: blinker3 2s ease infinite;
+  }
+
+@keyframes blinker3 {
+    50% {
+        fill: black;
+    }
+    0%, 100% {
+        fill: rgb(45, 214, 59);
+    }
+  }

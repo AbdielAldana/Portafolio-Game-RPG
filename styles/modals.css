@@ -1,0 +1,535 @@
+/* @media (max-width: 426px) {
+    .sign {
+        padding: 10vh 15vw;
+        width: 100%;
+        height: 80%;
+    }
+
+    .book {
+        width: 100%;
+        height: 80%;
+    }
+
+    .paper {
+        background-image: url("../img/modals/halfBook.png");
+    }
+
+    .flexMobile {
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 427px) and (max-width: 1023px) {
+    .sign {
+        padding: 15vh 10vw;
+        width: 100%;
+        height: 70%;
+    }
+
+    .book {
+        width: 400px;
+        height: 80%;
+    }
+
+    .paper {
+        background-image: url("../img/modals/halfBook.png");
+    }
+
+    .flexMobile {
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sign {
+        padding: 15vh 10vw;
+        width: 100%;
+        height: 70%;
+    }
+
+    .book {
+        width: 75%;
+        height: 75%;
+    }
+
+    .paper {
+        background-image: url("../img/modals/book.png");
+    }
+
+    .flexMobile {
+        display: inline-flex;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sign {
+        padding: calc(25vh / 2) 15vw;
+        width: 100%;
+        height: 75%;
+    }
+
+    .book {
+        width: 70%;
+        height: 95%;
+    }
+
+    .paper {
+        background-image: url("../img/modals/book.png");
+    }
+
+    .flexMobile {
+        display: inline-flex;
+    }
+} */
+
+.openModals {
+    animation:opens 1s ease;
+    display: inline-flex;
+}
+
+.closeModals {
+    display: inline-flex;
+    animation:closes .1s ease;
+    /* display: none; */
+    transform: translateY(130%);
+    opacity: 0;
+}
+
+@keyframes opens {
+    0% {
+        /* transform: translateY(100%); */
+        opacity: 0;
+    }
+    100% {
+        /* transform: translateY(0%); */
+        opacity: 1;
+    }
+}
+@keyframes closes {
+    0% {
+        opacity: 1;
+        /* transform: translateY(0%); */
+        transform: translateY(0%);
+    }
+    99% {
+        opacity: 0;
+        transform: translateY(0%);
+        /* display: none; */
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(130%);
+        /* display: none; */
+    }
+}
+
+.closeModal {
+    display: none;
+    /* animation:close 1.5s ease; */
+}
+.openModal {
+    display: block;
+    animation:open 1.5s ease;
+}
+
+
+.animationCloseModal {
+    animation:close .5s ease;
+}
+
+
+@keyframes open {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes close {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+        display: none;
+    }
+}
+.openModalRotate {
+    display: block;
+    animation:openRotate 1.5s ease;
+}
+
+
+.animationCloseModalRotate {
+    animation:closeRotate .5s ease;
+}
+
+
+@keyframes openRotate {
+    0% {
+        transform: translateY(100%)  perspective( 0px ) rotateX( 0deg );
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%) perspective( 1500px ) rotateX( 38deg );
+        opacity: 1;
+    }
+}
+@keyframes closeRotate {
+    0% {
+        opacity: 1;
+        transform: translateY(0%) perspective( 1500px ) rotateX( 38deg );
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%) perspective( 0px ) rotateX( 0deg );
+        display: none;
+    }
+}
+
+.p20 p {
+    font-size: 20px !important;
+}
+
+.buttonClose {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    transition: all .3s ;
+}
+
+.buttonCloseText:hover {
+    color:#C1D00A;
+    cursor: pointer;
+}
+
+.buttonClose:hover {
+    filter: brightness(1.2);
+}
+
+.contentModals {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* display: none; */
+    /* display: inline-flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.contentData > p {
+    text-align: justify;  font-size: 20px;
+}
+
+p.capital::first-letter {
+    font-size: 210%;
+    line-height: 1;
+    float:left;
+}
+
+/* @keyframes color {
+    100%,
+    0% {
+      stroke: #FDCF00;
+    }
+    40% {
+      stroke: #8D6A37;
+    }
+    66% {
+      stroke: #6D1687;
+    }
+    80%,
+    90% {
+      stroke: #96BC0D;
+    }
+  } */
+
+
+/* ---------------------------------------------------------------- */
+
+.sing {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* animation: cartel 1s ease; */
+}
+
+.surfaceStyle {
+    background-image: url("../img/modals/surface.png");
+    background-size: 100% 100%;
+    height: calc(100% - 100px);
+    width: 100%;
+    /* padding: 20% 30%; */
+    padding: 50px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.contentData {
+    overflow-y: auto;
+    /* overflow: scroll; */
+    height: calc(100% - 60px);
+    margin: 0 10%;
+    padding: 20px 30px;
+    /* border: solid 1px black;*/
+}
+.contentDataNoScroll {
+    /* overflow-y: auto; */
+    /* overflow: scroll; */
+    height: calc(100% - 60px);
+    margin: 0 5%;
+    padding: 20px 20px;
+    /* border: solid 1px black;*/
+}
+.overflowAuto {
+    overflow-y: auto;
+    /* overflow: scroll; */
+    /* height: 100%; */
+    /* border: solid 1px black;*/
+}
+
+.stickStyle {
+    background-image: url("../img/modals/stick.png");
+    background-size: 100% 100%;
+    height: 900px !important;
+    width: 80px;
+    z-index: 1;
+    top: 100px;
+    left: calc(50% - 40px);
+    position: fixed;
+}
+
+/* ---------------------------------------------------------------- */
+.sign {
+    /* padding: calc(25vh / 2) 15vw; */
+    width: 1080px;
+    height: 700px;
+}
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.book {
+    /* height: 100%;
+    width: 100%; */
+    position: relative;
+}
+
+.paper {
+    background-image: url("../img/modals/book.png");
+    /* background-image: url("../img/modals/book.png"); */
+    background-size: 100% 100%;
+    height: 610px;
+    width: 1100px;
+    /* padding: 20% 30%; */
+    padding: 50px 0 60px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.paper .contentData {
+    margin: 0 8% !important;
+}
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.signStone {
+    /* height: 100%;
+    width: 100%; */
+    position: relative;
+}
+
+.signStoneContent {
+    background-image: url("../img/modals/cartelPiedra.png");
+    /* background-image: url("../img/modals/book.png"); */
+    background-size: 100% 100%;
+    height: 610px;
+    width: 1100px;
+    /* padding: 20% 30%; */
+    padding: 50px 0 60px 0;
+    position: relative;
+    z-index: 2;
+    color:#5D6266 !important;
+}
+
+.signStoneContent .contentData {
+    margin: 0 8% !important;
+}
+
+.signStoneContent .buttonClose {
+    right: 30px !important;
+    top: 30px !important;
+}
+/* SCROLL BARR SING */
+.signStoneContent .contentData::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.signStoneContent .contentData::-webkit-scrollbar-thumb {
+    background: #646871 !important;
+    border-radius: 0px;
+}
+
+.signStoneContent .contentData::-webkit-scrollbar-thumb:hover {
+    background: #5D6266 !important;
+}
+
+.signStoneContent .contentData::-webkit-scrollbar-track {
+    background: #B9C0C6 !important;
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.note {
+    /* height: 100%;
+    width: 100%; */
+    position: relative;
+}
+
+.noteBack {
+    background-image: url("../img/modals/hoja.png");
+    background-size: 100% 100%;
+    height: 540px;
+    width: 1200px;
+    /* padding: 20% 30%; */
+    padding: 100px 0 100px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.noteBack .contentData {
+    margin: 0 8% !important;
+}
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+.npc {
+    /* height: 100%;
+    width: 100%; */
+    position: relative;
+}
+
+.npcDialog {
+    background-image: url("../img/modals/dialogo.png");
+    background-size: 100% 100%;
+    height: 270px;
+    width: 960px;
+    /* padding: 20% 30%; */
+    /* padding: 100px 0 100px 0; */
+    position: relative;
+    z-index: 2;
+}
+
+.npcDialog .contentData {
+    height: 195px;
+    color: white;
+    padding: 0px 15px 0px 215px;
+    font-size: 20px;
+    margin-right: 85px;
+    margin-left: 0;
+    transform: translateY(35px);
+}
+/* ---------------------------------------------------------------- */
+
+
+.progress {
+    background: #4d2c265e;
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 20px;
+    width: 90%;
+  }
+
+  .progress-value {
+    box-shadow: 0 10px 40px -10px #4d2c26;
+    border-radius: 100px;
+    background: #8F563B;
+    height: 10px;
+    width: 0%;
+  }
+
+  .progress-value.por90 {
+    animation: load90 3s normal forwards;
+  }
+
+  @keyframes load90 {
+      50% {
+        width: 0%;
+      }
+      100% {
+        width: 90%;
+      }
+  }
+
+  .progress-value.por80 {
+    animation: load80 3s normal forwards;
+  }
+
+  @keyframes load80 {
+      50% {
+        width: 0%;
+      }
+      100% {
+        width: 80%;
+      }
+  }
+
+  .progress-value.por70 {
+    animation: load70 3s normal forwards;
+  }
+
+  @keyframes load70 {
+      50% {
+        width: 0%;
+      }
+      100% {
+        width: 70%;
+      }
+  }
+
+  .progress-value.por60 {
+    animation: load60 3s normal forwards;
+  }
+
+  @keyframes load60 {
+      50% {
+        width: 0%;
+      }
+      100% {
+        width: 60%;
+      }
+  }
+  .progress-value.por50 {
+    animation: load50 3s normal forwards;
+  }
+
+  @keyframes load50 {
+      50% {
+        width: 0%;
+      }
+      100% {
+        width: 50%;
+      }
+  }
+  .progress-value.por40 {
+    animation: load40 3s normal forwards;
+  }
+
+  @keyframes load40 {
+      50% {
+        width: 0%;
+      }
+      100% {
+        width: 40%;
+      }
+  }

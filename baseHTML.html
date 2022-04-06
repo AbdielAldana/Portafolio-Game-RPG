@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Play Abdiel Aldana" />
+    <meta property="og:description" content="Juega con mi portafolio web" />
+    <meta property="og:image" content="https://play.abdielaldana.com/img.png">
+    <meta property="og:url" content="https://play.abdielaldana.com/" />
+
+    <style>
+        @font-face {
+            font-family: 'RPGSystem';
+            src: url('styles/RPGSystem.ttf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
+        }
+    </style>
+    <title>Abdiel Aldana</title>
+    <link href="img/recursos/styleGolem.css" rel="stylesheet" type="text/css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="styles/loader.css" rel="stylesheet" type="text/css">
+    <link href="styles/modals.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color: #4d9262; height: 720px; width: 1280px;">
+    <!-- ================================================================================= -->
+    <!-- Audios -->
+    <audio src="sounds/music/song.mp3" id="audio-player" loop volume=".01">
+    </audio>
+    <audio src="sounds/open-book.mp3" id="book-open-sound">
+    </audio>
+
+    <!-- ================================================================================= -->
+    <!-- HUD InGame -->
+    <div class="buttonAudio" id="mutedAudio">
+        <img class="buttonAudioOff" src="img/recursos/au2.png" />
+        <img id="audioIconOn" class="buttonAudioOn" src="img/recursos/au1.png" />
+    </div>
+
+    <!-- ================================================================================= -->
+    <!-- Pantalla de Carga -->
+    <div class="boxLoader">
+        <div>
+            <div class="loader">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 402.58 402.58">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #fff;
+                            }
+
+                            .cls-1,
+                            .cls-2,
+                            .cls-4,
+                            .cls-6 {
+                                stroke: #382202;
+                                stroke-linejoin: round;
+                                stroke-width: 3px;
+                            }
+
+                            .cls-2 {
+                                fill: #382202;
+                            }
+
+                            .cls-3 {
+                                fill: #fdcf00;
+                            }
+
+                            .cls-4,
+                            .cls-7 {
+                                fill: none;
+                            }
+
+                            .cls-5,
+                            .cls-6 {
+                                fill: #be9b00;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Capa_2" data-name="Capa 2">
+                        <g id="Capa_2-2" data-name="Capa 2">
+                            <polygon class="cls-1"
+                                points="359.5 158.19 315.08 194.13 270.66 230.07 257.98 192.09 245.29 154.11 302.39 156.15 359.5 158.19" />
+                            <polygon class="cls-2"
+                                points="359.83 159.2 315.42 195.14 271 231.09 258.31 193.1 359.83 159.2" />
+                            <polygon class="cls-1"
+                                points="154.06 61.94 190 106.36 225.94 150.78 187.96 163.46 149.98 176.15 152.02 119.04 154.06 61.94" />
+                            <polygon class="cls-2"
+                                points="155.07 61.6 191.01 106.02 226.95 150.44 188.97 163.12 155.07 61.6" />
+                            <polygon class="cls-1"
+                                points="56.12 259.79 100.53 223.85 144.95 187.9 157.64 225.89 170.32 263.87 113.22 261.83 56.12 259.79" />
+                            <polygon class="cls-2"
+                                points="55.78 258.78 100.2 222.84 144.61 186.89 157.3 224.88 55.78 258.78" />
+                            <polygon class="cls-1"
+                                points="261.56 356.04 225.61 311.62 189.67 267.2 227.65 254.52 265.63 241.83 263.6 298.94 261.56 356.04" />
+                            <polygon class="cls-2"
+                                points="260.55 356.38 224.6 311.96 188.66 267.54 226.64 254.85 260.55 356.38" />
+                            <polygon class="cls-3"
+                                points="303.21 10.95 302.78 91.32 285.67 84.23 289.31 181.69 362.66 287.25 234.21 292.06 128.65 365.4 123.84 236.95 50.49 131.39 178.94 126.58 255.91 73.1 240.07 60.92 303.21 10.95" />
+                            <polygon class="cls-4"
+                                points="303.21 10.95 302.78 91.32 285.67 84.23 289.31 181.69 362.66 287.25 234.21 292.06 128.65 365.4 123.84 236.95 50.49 131.39 178.94 126.58 255.91 73.1 240.07 60.92 303.21 10.95" />
+                            <polygon class="cls-5" points="50.49 131.39 201.32 201.78 178.94 126.58 50.49 131.39" />
+                            <polygon class="cls-4" points="50.49 131.39 201.32 201.78 178.94 126.58 50.49 131.39" />
+                            <polygon class="cls-5"
+                                points="303.21 10.95 201.32 201.78 289 183.82 285.67 84.23 302.78 91.32 303.21 10.95" />
+                            <polygon class="cls-4"
+                                points="303.21 10.95 201.32 201.78 289 183.82 285.67 84.23 302.78 91.32 303.21 10.95" />
+                            <polygon class="cls-6" points="362.66 287.25 201.32 201.78 234.21 292.06 362.66 287.25" />
+                            <polygon class="cls-6" points="123.84 236.95 201.32 201.78 128.65 365.4 123.84 236.95" />
+                            <circle class="cls-7" cx="201.29" cy="201.29" r="201.29" />
+                        </g>
+                    </g>
+                </svg>
+                <svg class="circular" viewBox="25 25 50 50">
+                    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+            </div>
+            <h2 style="text-align: center;">Cargando...</h2>
+        </div>
+        <div class="textVersionArriba">
+            <p><strong>Portafolio Abdiel Aldana</strong></p>
+            <p>Version Alpha 2</p>
+        </div>
+        <div class="textVersionAbajo">
+            <p>Put* El Que Lo Lea</p>
+        </div>
+    </div>
+
+    <!-- ================================================================================= -->
+    <!-- INGAME PANTALLA CONTENIDO TOTAL -->
+    <div class="entorno" id="target">
+        <!-- Pasto (JS) -->
+        <div class="setCapa0" id="capa0"></div>
+
+        <!-- Marco - Arboles (JS) -->
+        <div class="setCapa1" id="capa1"></div>
+
+        <!-- Personaje y Elementos -->
+        <div class="setCapa2" id="capa2 pane" >
+            <!-- Personaje -->
+            <div id="box" class="caja1">
+                <div class="boxCharacter">
+                    <img id="imgCharacter" class="imgCharacter" src="img/characters/character_PW1.png">
+                </div>
+            </div>
+
+            <!-- <div class="elementoFloat" inicio="true"
+                style="z-index: 9; position: absolute; top:50%; left:50%; width: 64px; height: 64px; ">
+            </div> -->
+
+            <!-- Puntos Cardinales -->
+            <!-- <div class="lineaElementos" linea="2" style="display: inline-flex; align-items:flex-end; justify-content: space-between; position: absolute; top:calc(50% - 32px); right: 0; width: 100%; height:96px;">
+                <div class="elemento" tipo="izq" style="z-index: 9; width: 64px; height: 64px;">
+                    <img src="img/recursos/stepCoords.svg">
+                </div>
+                <div class="elemento" tipo="der" location="index" style="z-index: 9; width: 64px; height: 64px;">
+                    <img src="img/recursos/stepCoords.svg">
+                </div>
+            </div>
+            <div class="columnaElementos" linea="3" style="position: absolute; display: inline-flex; flex-direction: column; justify-content: space-between; height: 100%; left: calc(50% - 32px);">
+                <div class="elemento" tipo="arriba" style="z-index: 9; width: 64px; height: 64px;">
+                    <img src="img/recursos/stepCoords.svg">
+                </div>
+                <div class="elemento" tipo="abajo" location="index" style="z-index: 9; width: 64px; height: 64px;">
+                    <img src="img/recursos/stepCoords.svg">
+                </div>
+            </div> -->
+
+
+            <div class="lineaElementos" linea="1" style="display: inline-flex; justify-content: space-around; position: absolute; top:250px; right: 0; width: 100%; height:64px;">
+                <div class="elemento" tipo="portal" inicio="true" location="mundo2" profundidad="true"
+                    style="z-index: 9; width: 64px; height: 64px;">
+                    <img style="height: 64px; width: 64px;" src="img/Cajas/trapdoor.svg">
+                </div>
+                <div class="elemento" tipo="npc1" textLine="a1" style="z-index: 9; width: 96px; height: 96px;">
+                    <img style="width: 96px; height: 96px; bottom:0; position:absolute;" src="img/recursos/character4.png">
+                </div>
+                <div class="elemento" tipo="npc2" textLine="a2" style="z-index: 9; width: 96px; height: 96px;">
+                    <img style="width: 96px; height: 96px; bottom:0; position:absolute;" src="img/recursos/character4.png">
+                </div>
+            </div>
+            <div class="elementoFloat" tipo="bienvenida" profundidad="true"
+                style="z-index: 9; position: absolute; top:calc(50% - 32px); left:calc(50% - 150px); width: 64px; height: 64px">
+                <img src="img/Cajas/cartel.png">
+            </div>
+            <div class="elementoFloat" tipo="habilidades"
+                style="transform: rotate(150deg); z-index: 9; position: absolute; top:94px; left: 50%; width: 64px; height: 64px">
+                <img src="img/recursos/book1floor.png">
+            </div>
+            <div class="elementoFloat" tipo="note"
+            style="z-index: 9; position: absolute; bottom:20%; right:150px; width: 64px; height: 64px;" >
+                <img src="img/recursos/note1floor.png">
+            </div>
+            <!-- <div class="elementoFloat" tipo="bienvenida" profundidad="true"
+                style="z-index: 9; position: absolute; top:calc(50% - 48px); left:calc(50% - 48px); width: 96px; height:auto">
+                <embed class="golemBook" id="agua" element="agua" plus="p_fuego" src="img/recursos/Golem.svg" ></embed >
+            </div> -->
+
+
+            <div class="hideTextBox texto" texto="npc">
+                <h2 style="margin:0;">Alberto</h2>
+            </div>
+            <div class="hideTextBox texto" texto="bienvenida">
+                <h2 style="margin:0;">IMPORTANTE</h2>
+            </div>
+            <div class="hideTextBox texto" texto="habilidades">
+                <h2 style="margin:0;">Algo</h2>
+            </div>
+            <div class="hideTextBox texto textoBackground" texto="note">
+                <h2 style="margin:0;">Nota 1/3</h2>
+            </div>
+            <div class="hideTextBox texto textoBackground" texto="portal">
+                <h2 style="margin:0;">Prueba 1</h2>
+            </div>
+        </div>
+
+        <!-- Nubes -->
+        <div class="setCapa3" id="capa3">
+            <div style="position: relative; height: 100%; width: 100%;">
+                <img class="nube1" src="img/nubes/nube4.png">
+                <img class="nube2" src="img/nubes/nube10.png">
+                <img class="nube3" src="img/nubes/nube3.png">
+            </div>
+        </div>
+
+        <!-- Señales Texto -->
+        <div class="setCapa4" id="capa4">
+            <!-- <div class="texto" texto="bienvenida" style="width: 100px; height: 50px; background-color: red; position: absolute;"></div> -->
+        </div>
+
+        <!-- Modals -->
+        <div class="setCapa10 contentModals openModals" id="capa10">
+            <div class="modal sign openModal" id="instrucciones">
+                <div class="surfaceStyle">
+                    <div>
+                        <img class="buttonClose" src="img/recursos/close.png" />
+                    </div>
+                    <div class="contentData">
+                        <div style="padding: 0 10px;">
+                            <h1 style="text-align: center;">LEE ANTES DE CONTINUAR!!</h1>
+                            <p>
+                                Para poderte mover e interactuar con la página es necesario el uso de las siguientes
+                                teclas. Si estas en celular o tableta no podras disfrutar de la experiencia completa de
+                                mi portafolio.
+                            </p>
+                            <div class="flexMobile"
+                                style="justify-content: space-around; align-items: center; width: 100%;">
+                                <img style="width: 200px; height: auto;" src="img/recursos/keys.png">
+                                <p>
+                                    Para mover al personaje: <br />
+                                    W > Arriba <br />
+                                    S > Abajo <br />
+                                    A > Izquierda <br />
+                                    D > Derecha <br />
+                                    Barra > Acción con el entorno <br />
+                                </p>
+                            </div>
+                            <div style="display: inline-flex; justify-content: center; width: 100%; margin: 30px 0px;">
+                                <img style="width: 70%; height: auto;" src="img/recursos/separador.png">
+                            </div>
+                            <p style="text-align: justify; font-size: 20px;">
+                                Bien!, ahora que conoces los controles para poder navegar, intenta ir al cartel que
+                                tienes en la parte superior izquierda e interactua con el.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stickStyle"></div>
+            </div>
+
+            <div class="modal sign closeModal" id="bienvenida">
+                <div class="surfaceStyle">
+                    <div>
+                        <img class="buttonClose" src="img/recursos/close.png" />
+                    </div>
+
+                    <div class="contentData">
+                        <h1 style="text-align: center; margin-bottom: 0;">Quien soy yo?</h1>
+                        <div style="display: inline-flex; justify-content: center; width: 100%; margin: 30px 0px;">
+                            <img style="width: 70%; height: auto;" src="img/recursos/separador.png">
+                        </div>
+                        <p class="capital">La verdad se que ignoraran esta parte, ya que es la menos
+                            importante de todo mi portafolio. Pero a pesar de eso aun asi les dejo
+                            esta información.</p>
+                        <p>Soy apacionado por los videojuegos, en especial Pokemon, me
+                            gusta pasar mi tiempo libre en Youtube o viendo peliculas, la
+                            musica que disfruto mas es el Kpop, el cual estoy escuchando en
+                            estos momentos</p>
+                        <p>Disfruto mucho de los retos, mas si son intelectuales. Me apaciono
+                            muy facil por las cosas, pero a la vez pierdo el interes muy rapido
+                            Suelo usar todo el tiempo mi gorra de Gorillaz, fumo una cagetilla
+                            diaria de cigarros, tomo minimo un litro de coca al dìa. Y no tengo
+                            novia, disfruto mucho gastando mi dinero en mi mismo</p>
+                        <p>Como podras notar, disfruto escribir a lo menso. Por lo cual tengo
+                            un Blog donde escribo cada que tengo un pensamiento fuerte al
+                            respecto de algo, no me gusta quedarme callado y para no
+                            cagarla, mejor me desahogo en mi Blog.</p>
+                        <div style="display: inline-flex; justify-content: center; width: 100%; margin: 30px 0px;">
+                            <img style="width: 70%; height: auto;" src="img/recursos/separador.png">
+                        </div>
+                        <div style="display: flex; justify-content: center; margin-bottom: 100px;">
+                            <div class="cara">
+                                <img src="img/recursos/cara.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stickStyle"></div>
+            </div>
+
+            <div class="modal note closeModal" id="note">
+                <div class="noteBack">
+                    <div>
+                        <img class="buttonClose" src="img/recursos/close.png" />
+                    </div>
+                    <div class="contentDataNoScroll">
+                        <div style="display: inline-flex; justify-content: space-between; height: 100%;">
+                            <div class="overflowAuto" style=" height: auto; width: 50%; max-width: 50%; padding: 0 10px;">
+                                <div style="height: 100%; width: 100%; display: inline-flex; justify-content: center; align-items: center;">
+                                    <div style="width: 50%; margin: 10px 30px; height: auto;">
+                                        <embed  class="golemBook" id="agua" element="agua" plus="p_fuego" src="img/recursos/Golem.svg" ></embed >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overflowAuto" style="height: 100%; width: 50%; padding: 0 10px;">
+                                <h1 style="text-align: center;">Titulo Chidori</h1>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal book closeModal" id="habilidades">
+                <div class="paper">
+                    <div>
+                        <img class="buttonClose" src="img/recursos/close.png" />
+                    </div>
+                    <div class="contentDataNoScroll">
+                        <div style="display: inline-flex; justify-content: space-between; height: 100%;">
+                            <div class="overflowAuto" style=" height: auto; width: 45%; max-width: 45%; padding: 0 10px;">
+                                <div style="height: 100%; width: 100%; display: inline-flex; justify-content: center; align-items: center;">
+                                    <div style="width: 30%; margin: 10px 30px; height: auto;">
+                                        <embed  class="golemBook" id="agua" element="agua" src="img/recursos/Golem.svg" ></embed >
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="overflowAuto" style="height: 100%; width: 45%; padding: 0 10px;">
+                                <h1 style="text-align: center;">Titulo Chidori</h1>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                                <p style="text-align: justify; font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde iste quod beatae accusantium distinctio facilis assumenda aliquid quasi iusto, nam illo quae laborum temporibus, natus ratione cupiditate, nesciunt sit magni.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal npc closeModal" id="npc1">
+                <div class="npcDialog">
+                    <div>
+                        <img class="buttonClose" src="img/recursos/close.png" />
+                    </div>
+                    <img style="width: 250px; height: 250px; bottom:20px; left: 0px; position:absolute;" src="img/recursos/character4.png">
+                    <div class="overflowAuto contentData">
+                        <p>
+                            <span id="textoNPC1" class="textoNPC"></span>
+                        </p>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit nulla aut, voluptatum voluptate hic id natus expedita maxime tempore, iste, delectus alias ipsum! Vitae architecto atque repudiandae quod veritatis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit nulla aut, voluptatum voluptate hic id natus expedita maxime tempore, iste, delectus alias ipsum! Vitae architecto atque repudiandae quod veritatis.</p> -->
+                        <!-- <a><span style="color:#C1D00A;"> > </span> [Cerrar Dialogo]</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal npc closeModal" id="npc2">
+                <div class="npcDialog">
+                    <div>
+                        <img class="buttonClose" src="img/recursos/close.png" />
+                    </div>
+                    <img style="width: 250px; height: 250px; bottom:20px; left: 0px; position:absolute;" src="img/recursos/character4.png">
+                    <div class="overflowAuto contentData">
+                        <p>
+                            <span id="textoNPC2" class="textoNPC"></span>
+                        </p>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit nulla aut, voluptatum voluptate hic id natus expedita maxime tempore, iste, delectus alias ipsum! Vitae architecto atque repudiandae quod veritatis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit nulla aut, voluptatum voluptate hic id natus expedita maxime tempore, iste, delectus alias ipsum! Vitae architecto atque repudiandae quod veritatis.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/texts.js"></script>
+    <script src="js/sounds.js"></script>
+    <script src="js/motion.js"></script>
+    <script src="js/area.js"></script>
+    <script src="js/objectsAction.js"></script>
+    <script src="js/svgEdits.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css"  href="styleGolem.css"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 282.48 409.6"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    version="1.1"
+    id="normal"
+>
+<!-- <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="styleGolem.css" type="text/css"/> -->
+    <!-- <symbol id="example"> -->
+    <defs>
+        <!-- <style>
+            .golem-1{fill:#ddd19f;}
+            .golem-2{fill:#483829;}
+            .golem-3{fill:#2a1d26;}
+            .golem-4{fill:#c3b286;}
+            .golem-5{fill:#8e7b5b;}
+            .golem-6{fill:#2e9335;}
+            .golem-7{fill:#60ce3b;}
+        </style> -->
+    </defs>
+    <metadata
+        id="metadata7">
+        <rdf:RDF>
+        <cc:Work
+            rdf:about="">
+            <dc:format>image/svg+xml</dc:format>
+            <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            <dc:title></dc:title>
+        </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <g id="GolemImg" data-name="Capa 2">
+        <g id="Capa_1-2" data-name="Capa 1">
+            <polygon class="golem-1" points="190.68 204.8 91.81 204.8 91.81 275.42 84.75 275.42 84.75 402.54 127.12 402.54 127.12 282.48 155.37 282.48 155.37 402.54 197.74 402.54 197.74 275.42 190.68 275.42 190.68 204.8"/>
+            <polygon class="golem-1" points="247.17 98.87 247.17 91.81 225.99 91.81 190.68 91.81 190.68 14.12 190.68 7.06 91.81 7.06 91.81 14.12 91.81 91.81 56.5 91.81 35.31 91.81 35.31 98.87 7.06 98.87 7.06 275.42 49.44 275.42 49.44 155.36 56.5 155.36 56.5 197.74 225.99 197.74 225.99 155.36 233.05 155.36 233.05 275.42 275.42 275.42 275.42 98.87 247.17 98.87"/>
+            <rect class="golem-2" x="98.87" y="70.62" width="28.25" height="7.06"/>
+            <rect class="golem-2" x="155.36" y="70.62" width="28.25" height="7.06"/>
+            <rect class="golem-2" x="127.12" y="63.56" width="28.25" height="7.06"/>
+            <rect class="golem-2" x="127.12" y="91.81" width="28.25" height="7.06"/>
+            <rect class="golem-3" x="91.81" y="120.05" width="98.87" height="7.06"/>
+            <rect class="golem-3" x="91.81" width="98.87" height="7.06"/>
+            <polygon class="golem-3" points="211.86 105.93 211.86 91.81 247.17 91.81 247.17 84.74 211.86 84.74 211.86 14.12 204.8 14.12 204.8 105.93 211.86 105.93"/>
+            <rect class="golem-3" x="233.05" y="148.3" width="14.12" height="7.06"/>
+            <polygon class="golem-3" points="254.23 148.3 254.23 98.87 275.42 98.87 275.42 91.81 254.23 91.81 247.17 91.81 247.17 148.3 254.23 148.3"/>
+            <rect class="golem-3" x="275.42" y="98.87" width="7.06" height="56.5"/>
+            <polygon class="golem-3" points="275.42 155.36 268.36 155.36 268.36 211.86 268.36 247.17 275.42 247.17 275.42 211.86 275.42 155.36"/>
+            <rect class="golem-3" x="233.05" y="190.67" width="7.06" height="56.5"/>
+            <rect class="golem-3" x="225.98" y="155.36" width="7.06" height="35.31"/>
+            <rect class="golem-3" x="204.8" y="190.67" width="21.19" height="7.06"/>
+            <polygon class="golem-3" points="162.43 289.54 162.43 282.48 120.06 282.48 120.06 289.54 127.12 289.54 127.12 331.92 134.18 331.92 134.18 289.54 148.3 289.54 148.3 331.92 155.37 331.92 155.37 289.54 162.43 289.54"/>
+            <rect class="golem-3" x="190.67" y="254.23" width="7.06" height="21.19"/>
+            <rect class="golem-3" x="197.74" y="275.42" width="7.06" height="56.5"/>
+            <rect class="golem-3" x="155.36" y="331.92" width="7.06" height="42.37"/>
+            <rect class="golem-3" x="148.3" y="374.29" width="7.06" height="28.25"/>
+            <rect class="golem-3" x="197.74" y="374.29" width="7.06" height="28.25"/>
+            <rect class="golem-3" x="155.36" y="402.54" width="42.37" height="7.06"/>
+            <rect class="golem-3" x="225.98" y="247.17" width="7.06" height="28.25"/>
+            <rect class="golem-3" x="275.42" y="247.17" width="7.06" height="28.25"/>
+            <rect class="golem-3" x="233.05" y="275.42" width="42.37" height="7.06"/>
+            <rect class="golem-3" x="190.67" y="331.92" width="7.06" height="42.37"/>
+            <rect class="golem-3" x="35.31" y="148.3" width="14.12" height="7.06"/>
+            <polygon class="golem-3" points="28.25 148.3 35.31 148.3 35.31 91.81 28.25 91.81 7.06 91.81 7.06 98.87 28.25 98.87 28.25 148.3"/>
+            <rect class="golem-3" y="98.87" width="7.06" height="56.5"/>
+            <polygon class="golem-3" points="14.12 211.86 14.12 155.36 7.06 155.36 7.06 211.86 7.06 247.17 14.12 247.17 14.12 211.86"/>
+            <rect class="golem-3" x="42.37" y="190.67" width="7.06" height="56.5"/>
+            <rect class="golem-3" x="49.43" y="155.36" width="7.06" height="35.31"/>
+            <rect class="golem-3" x="56.5" y="190.67" width="21.19" height="7.06"/>
+            <polygon class="golem-3" points="77.68 197.74 77.68 204.8 84.75 204.8 84.75 233.05 91.81 233.05 91.81 254.23 98.87 254.23 98.87 233.05 91.81 233.05 91.81 204.8 141.24 204.8 190.68 204.8 190.68 233.05 183.61 233.05 183.61 254.23 190.68 254.23 190.68 233.05 197.74 233.05 197.74 204.8 204.8 204.8 204.8 197.74 141.24 197.74 77.68 197.74"/>
+            <polygon class="golem-3" points="91.81 275.42 91.81 254.23 84.75 254.23 84.75 275.42 77.68 275.42 77.68 331.92 84.75 331.92 84.75 275.42 91.81 275.42"/>
+            <rect class="golem-3" x="120.05" y="331.92" width="7.06" height="42.37"/>
+            <rect class="golem-3" x="127.12" y="374.29" width="7.06" height="28.25"/>
+            <rect class="golem-3" x="77.68" y="374.29" width="7.06" height="28.25"/>
+            <rect class="golem-3" x="84.74" y="402.54" width="42.37" height="7.06"/>
+            <rect class="golem-3" x="49.43" y="247.17" width="7.06" height="28.25"/>
+            <rect class="golem-3" y="247.17" width="7.06" height="28.25"/>
+            <rect class="golem-3" x="7.06" y="275.42" width="42.37" height="7.06"/>
+            <rect class="golem-3" x="84.74" y="331.92" width="7.06" height="42.37"/>
+            <polygon class="golem-3" points="70.62 105.93 77.68 105.93 77.68 14.12 70.62 14.12 70.62 84.74 35.31 84.74 35.31 91.81 70.62 91.81 70.62 105.93"/>
+            <polygon class="golem-3" points="91.81 105.93 84.75 105.93 77.68 105.93 77.68 112.99 84.75 112.99 84.75 120.05 91.81 120.05 91.81 112.99 91.81 105.93"/>
+            <polygon class="golem-3" points="190.68 105.93 190.68 112.99 190.68 120.05 197.74 120.05 197.74 112.99 204.8 112.99 204.8 105.93 197.74 105.93 190.68 105.93"/>
+            <polygon class="golem-3" points="197.74 14.12 204.8 14.12 204.8 7.06 197.74 7.06 190.68 7.06 190.68 14.12 197.74 14.12"/>
+            <polygon class="golem-3" points="91.81 14.12 91.81 7.06 84.75 7.06 77.68 7.06 77.68 14.12 84.75 14.12 91.81 14.12"/>
+            <rect class="golem-4" x="77.68" y="14.12" width="14.12" height="91.81"/>
+            <rect class="golem-4" x="190.67" y="14.12" width="14.12" height="91.81"/>
+            <rect class="golem-4" x="148.3" y="56.5" width="35.31" height="7.06"/>
+            <rect class="golem-4" x="91.81" y="127.12" width="98.87" height="7.06"/>
+            <rect class="golem-4" x="35.31" y="91.81" width="35.31" height="7.06"/>
+            <polygon class="golem-4" points="7.06 105.93 21.19 105.93 21.19 127.12 28.25 127.12 28.25 105.93 28.25 98.87 7.06 98.87 7.06 105.93"/>
+            <polygon class="golem-4" points="254.23 98.87 254.23 105.93 254.23 127.12 261.3 127.12 261.3 105.93 275.42 105.93 275.42 98.87 254.23 98.87"/>
+            <rect class="golem-4" x="42.37" y="155.36" width="7.06" height="35.31"/>
+            <rect class="golem-4" x="233.05" y="155.36" width="7.06" height="35.31"/>
+            <rect class="golem-4" x="211.86" y="91.81" width="35.31" height="7.06"/>
+            <rect class="golem-4" x="112.99" y="7.06" width="35.31" height="7.06"/>
+            <rect class="golem-4" x="190.67" y="120.05" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="183.61" y="190.67" width="14.12" height="7.06"/>
+            <rect class="golem-4" x="112.99" y="218.92" width="49.43" height="7.06"/>
+            <rect class="golem-4" x="84.74" y="120.05" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="77.68" y="112.99" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="70.62" y="105.93" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="197.74" y="112.99" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="204.8" y="105.93" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="254.23" y="268.36" width="21.19" height="7.06"/>
+            <rect class="golem-4" x="268.36" y="247.17" width="7.06" height="14.12"/>
+            <rect class="golem-4" x="233.05" y="247.17" width="7.06" height="21.19"/>
+            <rect class="golem-4" x="7.06" y="268.36" width="21.19" height="7.06"/>
+            <rect class="golem-4" x="7.06" y="247.17" width="7.06" height="14.12"/>
+            <rect class="golem-4" x="42.37" y="247.17" width="7.06" height="21.19"/>
+            <rect class="golem-4" x="261.29" y="183.61" width="7.06" height="63.56"/>
+            <rect class="golem-4" x="14.12" y="183.61" width="7.06" height="63.56"/>
+            <rect class="golem-4" x="84.74" y="275.42" width="7.06" height="56.5"/>
+            <rect class="golem-4" x="190.67" y="275.42" width="7.06" height="56.5"/>
+            <rect class="golem-4" x="183.61" y="331.92" width="7.06" height="14.12"/>
+            <rect class="golem-4" x="183.61" y="353.1" width="7.06" height="21.19"/>
+            <rect class="golem-4" x="91.81" y="346.04" width="7.06" height="28.25"/>
+            <rect class="golem-4" x="162.43" y="338.98" width="7.06" height="7.06"/>
+            <polygon class="golem-4" points="120.06 331.92 112.99 331.92 112.99 338.98 105.93 338.98 105.93 346.04 112.99 346.04 120.06 346.04 120.06 331.92"/>
+            <rect class="golem-4" x="162.43" y="381.35" width="28.25" height="7.06"/>
+            <rect class="golem-4" x="155.36" y="395.47" width="42.37" height="7.06"/>
+            <polygon class="golem-4" points="91.81 388.41 112.99 388.41 120.06 388.41 120.06 381.35 120.06 374.29 112.99 374.29 112.99 381.35 91.81 381.35 91.81 388.41"/>
+            <rect class="golem-4" x="84.74" y="395.47" width="42.37" height="7.06"/>
+            <polygon class="golem-4" points="91.81 275.42 98.87 275.42 120.06 275.42 120.06 268.36 98.87 268.36 98.87 254.23 91.81 254.23 91.81 275.42"/>
+            <polygon class="golem-4" points="183.61 254.23 183.61 268.36 169.49 268.36 169.49 275.42 183.61 275.42 190.68 275.42 190.68 254.23 183.61 254.23"/>
+            <rect class="golem-4" x="155.36" y="303.67" width="7.06" height="21.19"/>
+            <polygon class="golem-4" points="190.68 233.05 190.68 218.92 190.68 211.86 183.61 211.86 176.55 211.86 176.55 218.92 183.61 218.92 183.61 233.05 190.68 233.05"/>
+            <polygon class="golem-4" points="91.81 218.92 91.81 233.05 98.87 233.05 98.87 218.92 105.93 218.92 105.93 211.86 98.87 211.86 91.81 211.86 91.81 218.92"/>
+            <rect class="golem-4" x="240.11" y="190.67" width="7.06" height="28.25"/>
+            <rect class="golem-4" x="35.31" y="190.67" width="7.06" height="28.25"/>
+            <rect class="golem-4" x="268.36" y="127.12" width="7.06" height="28.25"/>
+            <rect class="golem-4" x="7.06" y="127.12" width="7.06" height="28.25"/>
+            <rect class="golem-4" x="127.12" y="169.49" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="112.99" y="162.43" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="120.05" y="148.3" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="91.81" y="169.49" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="233.05" y="120.05" width="14.12" height="7.06"/>
+            <rect class="golem-4" x="35.31" y="127.12" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="134.18" y="176.55" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="155.36" y="261.29" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="148.3" y="254.23" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="134.18" y="261.29" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="155.36" y="247.17" width="7.06" height="7.06"/>
+            <rect class="golem-4" x="120.05" y="303.67" width="7.06" height="21.19"/>
+            <polygon class="golem-5" points="98.87 112.99 98.87 95.34 91.81 95.34 91.81 112.99 91.81 112.99 91.81 120.05 190.68 120.05 190.68 112.99 190.68 112.99 190.68 95.34 183.61 95.34 183.61 112.99 98.87 112.99"/>
+            <polygon class="golem-5" points="91.81 70.62 98.87 70.62 98.87 63.56 91.81 63.56 91.81 21.19 84.75 21.19 84.75 84.74 91.81 84.74 91.81 70.62"/>
+            <polygon class="golem-5" points="190.68 98.87 197.74 98.87 197.74 49.43 190.68 49.43 190.68 63.56 183.61 63.56 183.61 70.62 190.68 70.62 190.68 98.87"/>
+            <polygon class="golem-5" points="148.3 63.56 148.3 56.5 127.12 56.5 98.87 56.5 98.87 63.56 127.12 63.56 148.3 63.56"/>
+            <polygon class="golem-5" points="204.8 148.3 197.74 148.3 197.74 197.74 204.8 197.74 204.8 190.67 225.99 190.67 225.99 183.61 204.8 183.61 204.8 148.3"/>
+            <polygon class="golem-5" points="190.68 204.8 91.81 204.8 91.81 211.86 105.93 211.86 105.93 218.92 176.55 218.92 176.55 211.86 190.68 211.86 190.68 204.8"/>
+            <rect class="golem-5" x="21.19" y="155.36" width="21.19" height="7.06"/>
+            <rect class="golem-5" x="240.11" y="155.36" width="21.19" height="7.06"/>
+            <rect class="golem-5" x="233.05" y="268.36" width="21.19" height="7.06"/>
+            <rect class="golem-5" x="254.23" y="261.29" width="21.19" height="7.06"/>
+            <rect class="golem-5" x="162.43" y="374.29" width="28.25" height="7.06"/>
+            <rect class="golem-5" x="91.81" y="374.29" width="21.19" height="7.06"/>
+            <rect class="golem-5" x="28.25" y="268.36" width="21.19" height="7.06"/>
+            <rect class="golem-5" x="7.06" y="261.29" width="21.19" height="7.06"/>
+            <polygon class="golem-5" points="84.75 197.74 183.61 197.74 183.61 190.67 84.75 190.67 84.75 162.43 77.68 162.43 77.68 183.61 56.5 183.61 56.5 190.67 77.68 190.67 77.68 197.74 84.75 197.74"/>
+            <rect class="golem-5" x="120.05" y="134.18" width="7.06" height="14.12"/>
+            <rect class="golem-5" x="35.31" y="112.99" width="7.06" height="14.12"/>
+            <rect class="golem-5" x="112.99" y="148.3" width="7.06" height="14.12"/>
+            <rect class="golem-5" x="98.87" y="162.43" width="14.12" height="7.06"/>
+            <rect class="golem-5" x="120.05" y="162.43" width="14.12" height="7.06"/>
+            <rect class="golem-5" x="155.36" y="240.11" width="14.12" height="7.06"/>
+            <rect class="golem-5" x="141.24" y="247.17" width="14.12" height="7.06"/>
+            <rect class="golem-5" x="233.05" y="112.99" width="14.12" height="7.06"/>
+            <rect class="golem-5" x="134.18" y="169.49" width="7.06" height="7.06"/>
+            <rect class="golem-5" x="42.37" y="127.12" width="7.06" height="7.06"/>
+            <rect class="golem-5" x="141.24" y="176.55" width="7.06" height="7.06"/>
+            <rect class="golem-5" x="155.36" y="254.23" width="7.06" height="7.06"/>
+            <rect class="golem-5" x="162.43" y="261.29" width="7.06" height="7.06"/>
+            <rect class="golem-5" x="155.36" y="289.54" width="7.06" height="14.12"/>
+            <rect class="golem-5" x="120.05" y="289.54" width="7.06" height="21.19"/>
+            <rect class="golem-5" x="84.74" y="296.6" width="7.06" height="21.19"/>
+            <rect class="golem-5" x="98.87" y="331.92" width="14.12" height="7.06"/>
+            <rect class="golem-5" x="169.49" y="331.92" width="14.12" height="7.06"/>
+            <rect class="golem-5" x="190.67" y="282.48" width="7.06" height="35.31"/>
+            <rect class="golem-5" x="134.18" y="254.23" width="7.06" height="7.06"/>
+            <rect class="golem-5" x="225.98" y="120.05" width="7.06" height="7.06"/>
+            <rect class="golem-5" x="268.36" y="98.87" width="7.06" height="7.06"/>
+            <rect class="golem-5" x="14.12" y="98.87" width="7.06" height="7.06"/>
+            <rect class="golem-6" x="155.36" y="63.56" width="28.25" height="7.06"/>
+            <rect class="golem-6" x="98.87" y="63.56" width="28.25" height="7.06"/>
+            <polygon class="golem-6" points="190.68 7.06 148.3 7.06 148.3 14.12 162.43 14.12 162.43 21.19 176.55 21.19 176.55 28.25 176.55 35.31 176.55 42.37 183.61 42.37 183.61 35.31 183.61 28.25 183.61 21.19 204.8 21.19 204.8 14.12 190.68 14.12 190.68 7.06"/>
+            <polygon class="golem-6" points="91.81 21.19 98.87 21.19 98.87 14.12 112.99 14.12 112.99 7.06 91.81 7.06 91.81 14.12 77.68 14.12 77.68 21.19 77.68 28.25 91.81 28.25 91.81 21.19"/>
+            <polygon class="golem-6" points="211.86 98.87 233.05 98.87 233.05 105.93 247.17 105.93 247.17 98.87 247.17 91.81 211.86 91.81 211.86 98.87"/>
+            <rect class="golem-6" x="35.31" y="91.81" width="21.19" height="7.06"/>
+            <polygon class="golem-6" points="169.49 141.24 176.55 141.24 176.55 148.3 183.61 148.3 183.61 141.24 183.61 134.18 183.61 127.12 148.3 127.12 148.3 134.18 169.49 134.18 169.49 141.24"/>
+            <polygon class="golem-6" points="28.25 268.36 21.19 268.36 21.19 261.3 14.12 261.3 7.06 261.3 7.06 268.36 7.06 275.42 14.12 275.42 21.19 275.42 28.25 275.42 35.31 275.42 42.37 275.42 42.37 268.36 35.31 268.36 28.25 268.36"/>
+            <polygon class="golem-6" points="261.3 112.99 261.3 105.93 268.36 105.93 268.36 98.87 261.3 98.87 254.23 98.87 254.23 105.93 254.23 112.99 254.23 120.05 261.3 120.05 261.3 112.99"/>
+            <polygon class="golem-6" points="21.19 105.93 21.19 98.87 14.12 98.87 7.06 98.87 7.06 105.93 14.12 105.93 21.19 105.93"/>
+            <polygon class="golem-6" points="268.36 261.3 268.36 268.36 261.3 268.36 261.3 275.42 268.36 275.42 275.42 275.42 275.42 268.36 275.42 261.3 268.36 261.3"/>
+            <rect class="golem-6" x="190.67" y="282.48" width="7.06" height="7.06"/>
+            <polygon class="golem-6" points="105.93 218.92 105.93 211.86 98.87 211.86 91.81 211.86 91.81 218.92 98.87 218.92 98.87 225.99 105.93 225.99 112.99 225.99 112.99 218.92 105.93 218.92"/>
+            <rect class="golem-6" x="112.99" y="225.98" width="7.06" height="7.06"/>
+            <rect class="golem-6" x="120.05" y="233.05" width="7.06" height="7.06"/>
+            <rect class="golem-6" x="183.61" y="289.54" width="7.06" height="7.06"/>
+            <polygon class="golem-6" points="183.61 303.67 183.61 310.73 190.68 310.73 197.74 310.73 197.74 303.67 197.74 296.61 190.68 296.61 190.68 303.67 183.61 303.67"/>
+            <rect class="golem-6" x="176.55" y="310.73" width="7.06" height="7.06"/>
+            <rect class="golem-6" x="169.49" y="317.79" width="7.06" height="7.06"/>
+            <polygon class="golem-6" points="120.06 395.47 120.06 402.54 127.12 402.54 127.12 395.47 127.12 388.41 120.06 388.41 120.06 395.47"/>
+            <polygon class="golem-6" points="91.81 395.47 91.81 388.41 91.81 381.35 84.75 381.35 84.75 388.41 84.75 395.47 84.75 402.54 91.81 402.54 98.87 402.54 105.93 402.54 105.93 395.47 98.87 395.47 91.81 395.47"/>
+            <polygon class="golem-6" points="190.68 395.47 183.61 395.47 176.55 395.47 176.55 402.54 183.61 402.54 190.68 402.54 197.74 402.54 197.74 395.47 197.74 388.41 190.68 388.41 190.68 395.47"/>
+            <polygon class="golem-6" points="162.43 388.41 155.37 388.41 155.37 395.47 155.37 402.54 162.43 402.54 169.49 402.54 169.49 395.47 162.43 395.47 162.43 388.41"/>
+            <rect class="golem-7" x="162.43" y="63.56" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="162.43" y="134.18" width="7.06" height="7.06"/>
+            <polygon class="golem-7" points="176.55 148.3 176.55 155.36 183.61 155.36 183.61 148.3 183.61 141.24 176.55 141.24 169.49 141.24 169.49 148.3 176.55 148.3"/>
+            <rect class="golem-7" x="240.11" y="105.93" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="35.31" y="98.87" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="112.99" y="63.56" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="84.74" y="21.19" width="14.12" height="7.06"/>
+            <rect class="golem-7" x="98.87" y="14.12" width="7.06" height="7.06"/>
+            <polygon class="golem-7" points="162.43 28.25 169.49 28.25 169.49 35.31 176.55 35.31 176.55 28.25 176.55 21.19 176.55 14.12 155.37 14.12 155.37 21.19 162.43 21.19 162.43 28.25"/>
+            <polygon class="golem-7" points="183.61 21.19 183.61 28.25 190.68 28.25 197.74 28.25 197.74 21.19 190.68 21.19 183.61 21.19"/>
+            <rect class="golem-7" x="148.3" y="127.12" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="268.36" y="254.23" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="190.67" y="381.35" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="112.99" y="395.47" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="120.05" y="381.35" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="183.61" y="388.41" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="155.36" y="381.35" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="261.29" y="105.93" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="261.29" y="261.29" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="254.23" y="268.36" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="183.61" y="296.6" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="105.93" y="225.98" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="112.99" y="233.05" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="91.81" y="218.92" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="190.67" y="289.54" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="176.55" y="303.67" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="169.49" y="310.73" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="21.19" y="261.29" width="7.06" height="7.06"/>
+            <polygon class="golem-7" points="14.12 254.23 7.06 254.23 7.06 261.3 14.12 261.3 21.19 261.3 21.19 254.23 14.12 254.23"/>
+            <rect class="golem-7" x="7.06" y="105.93" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="211.86" y="91.81" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="233.05" y="98.87" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="49.43" y="91.81" width="7.06" height="7.06"/>
+            <rect class="golem-7" x="84.74" y="381.35" width="7.06" height="7.06"/>
+        </g>
+    </g>
+</svg>
